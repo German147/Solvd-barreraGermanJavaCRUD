@@ -2,10 +2,7 @@ package org.example;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import org.example.DAO.StudentDAO;
-import org.example.entity.Student;
 
-import java.util.List;
 
 /**
  * Application for Practice Java CRUD
@@ -27,7 +24,7 @@ public class App {
         /**
          * Here I UPDATE an existen element into the DB
          */
-        StudentDAO studentDAO = new StudentDAO();
+       // StudentDAO studentDAO = new StudentDAO();
 //        Student modifyingStudent = new Student(7, "Patrick", "Schutts", "78946513");
 //        StudentDAO updateDAO1 = new StudentDAO();
 //        updateDAO1.updateEntity(modifyingStudent);
@@ -41,9 +38,9 @@ public class App {
         /**
          * Here I find an element by ID
          */
-        Student student3 = new Student(5,"Jhon","Barboza","456789");
-        studentDAO.getEntityBYId(student3);
-          LOGGER.info(student3);
+//        Student student3 = new Student(5,"Jhon","Barboza","456789");
+//        studentDAO.getEntityBYId(student3);
+//          LOGGER.info(student3);
         }
 
         /**
