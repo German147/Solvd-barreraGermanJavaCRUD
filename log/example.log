@@ -1,0 +1,278 @@
+2022-05-08 08:03:36,701 DEBUG o.e.D.StudentDAO [main] com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Incorrect date value: '456789' for column `barrera_german_crud`.`students`.`birthDate` at row 1
+2022-05-08 08:03:36,737 INFO o.e.App [main] Student = Student{idStudent= 1, name: German, surname: Barrera, Phone number: 1234578, Birthday : 1980-04-12}
+2022-05-08 08:03:36,738 INFO o.e.App [main] Student = Student{idStudent= 2, name: Marti, surname: Barrera, Phone number: 457812, Birthday : 2016-05-03}
+2022-05-08 08:03:36,738 INFO o.e.App [main] Student = Student{idStudent= 3, name: Lean, surname: Barrea, Phone number: 7898452, Birthday : 2013-05-08}
+2022-05-08 08:03:36,738 INFO o.e.App [main] Student = Student{idStudent= 4, name: Evange, surname: Cecato, Phone number: 4578954, Birthday : 1980-12-03}
+2022-05-08 08:09:07,222 DEBUG o.e.D.StudentDAO [main] com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Incorrect date value: '456789' for column `barrera_german_crud`.`students`.`birthDate` at row 1
+2022-05-08 08:09:07,260 INFO o.e.App [main] Student = Student{idStudent= 1, name: German, surname: Barrera, Phone number: 1234578, Birthday : 1980-04-12}
+2022-05-08 08:09:07,261 INFO o.e.App [main] Student = Student{idStudent= 2, name: Marti, surname: Barrera, Phone number: 457812, Birthday : 2016-05-03}
+2022-05-08 08:09:07,261 INFO o.e.App [main] Student = Student{idStudent= 3, name: Lean, surname: Barrea, Phone number: 7898452, Birthday : 2013-05-08}
+2022-05-08 08:09:07,261 INFO o.e.App [main] Student = Student{idStudent= 4, name: Evange, surname: Cecato, Phone number: 4578954, Birthday : 1980-12-03}
+2022-05-08 08:12:06,092 DEBUG o.e.D.StudentDAO [main] com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Incorrect date value: '456789' for column `barrera_german_crud`.`students`.`birthDate` at row 1
+2022-05-08 08:12:06,129 INFO o.e.App [main] Student = Student{idStudent= 1, name: German, surname: Barrera, Phone number: 1234578, Birthday : 1980-04-12}
+2022-05-08 08:12:06,129 INFO o.e.App [main] Student = Student{idStudent= 2, name: Marti, surname: Barrera, Phone number: 457812, Birthday : 2016-05-03}
+2022-05-08 08:12:06,129 INFO o.e.App [main] Student = Student{idStudent= 3, name: Lean, surname: Barrea, Phone number: 7898452, Birthday : 2013-05-08}
+2022-05-08 08:12:06,130 INFO o.e.App [main] Student = Student{idStudent= 4, name: Evange, surname: Cecato, Phone number: 4578954, Birthday : 1980-12-03}
+2022-05-08 08:15:06,976 DEBUG o.e.D.StudentDAO [main] com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Incorrect date value: '456789' for column `barrera_german_crud`.`students`.`birthDate` at row 1
+2022-05-08 08:15:07,005 INFO o.e.App [main] Student = Student{idStudent= 1, name: German, surname: Barrera, Phone number: 1234578, Birthday : 1980-04-12}
+2022-05-08 08:15:07,005 INFO o.e.App [main] Student = Student{idStudent= 2, name: Marti, surname: Barrera, Phone number: 457812, Birthday : 2016-05-03}
+2022-05-08 08:15:07,005 INFO o.e.App [main] Student = Student{idStudent= 3, name: Lean, surname: Barrea, Phone number: 7898452, Birthday : 2013-05-08}
+2022-05-08 08:15:07,006 INFO o.e.App [main] Student = Student{idStudent= 4, name: Evange, surname: Cecato, Phone number: 4578954, Birthday : 1980-12-03}
+2022-05-08 08:26:55,242 DEBUG o.e.D.StudentDAO [main] com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Incorrect date value: '456789' for column `barrera_german_crud`.`students`.`birthDate` at row 1
+2022-05-08 08:26:55,280 INFO o.e.App [main] Student = Student{idStudent= 1, name: German, surname: Barrera, Phone number: 1234578, Birthday : 1980-04-12}
+2022-05-08 08:26:55,280 INFO o.e.App [main] Student = Student{idStudent= 2, name: Marti, surname: Barrera, Phone number: 457812, Birthday : 2016-05-03}
+2022-05-08 08:26:55,281 INFO o.e.App [main] Student = Student{idStudent= 3, name: Lean, surname: Barrea, Phone number: 7898452, Birthday : 2013-05-08}
+2022-05-08 08:26:55,281 INFO o.e.App [main] Student = Student{idStudent= 4, name: Evange, surname: Cecato, Phone number: 4578954, Birthday : 1980-12-03}
+2022-05-08 08:31:17,814 DEBUG o.e.D.StudentDAO [main] com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Incorrect date value: '456789' for column `barrera_german_crud`.`students`.`birthDate` at row 1
+2022-05-08 08:31:17,846 INFO o.e.App [main] Student = Student{idStudent= 1, name: German, surname: Barrera, Phone number: 1234578, Birthday : }
+2022-05-08 08:31:17,846 INFO o.e.App [main] Student = Student{idStudent= 2, name: Marti, surname: Barrera, Phone number: 457812, Birthday : }
+2022-05-08 08:31:17,846 INFO o.e.App [main] Student = Student{idStudent= 3, name: Lean, surname: Barrea, Phone number: 7898452, Birthday : }
+2022-05-08 08:31:17,847 INFO o.e.App [main] Student = Student{idStudent= 4, name: Evange, surname: Cecato, Phone number: 4578954, Birthday : }
+2022-05-08 08:32:53,192 DEBUG o.e.D.StudentDAO [main] com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Incorrect date value: '456789' for column `barrera_german_crud`.`students`.`birthDate` at row 1
+2022-05-08 08:32:53,225 INFO o.e.App [main] Student = Student{idStudent= 1, name: German, surname: Barrera, Phone number: 1234578, Birthday : }
+2022-05-08 08:32:53,225 INFO o.e.App [main] Student = Student{idStudent= 2, name: Marti, surname: Barrera, Phone number: 457812, Birthday : }
+2022-05-08 08:32:53,225 INFO o.e.App [main] Student = Student{idStudent= 3, name: Lean, surname: Barrea, Phone number: 7898452, Birthday : }
+2022-05-08 08:32:53,225 INFO o.e.App [main] Student = Student{idStudent= 4, name: Evange, surname: Cecato, Phone number: 4578954, Birthday : }
+2022-05-08 10:56:34,457 DEBUG o.e.D.StudentDAO [main] com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Incorrect date value: '456789' for column `barrera_german_crud`.`students`.`birthDate` at row 1
+2022-05-08 10:56:34,495 INFO o.e.App [main] Student = Student{idStudent= 1, name: German, surname: Barrera, Phone number: 1234578, Birthday : }
+2022-05-08 10:56:34,496 INFO o.e.App [main] Student = Student{idStudent= 2, name: Marti, surname: Barrera, Phone number: 457812, Birthday : }
+2022-05-08 10:56:34,496 INFO o.e.App [main] Student = Student{idStudent= 3, name: Lean, surname: Barrea, Phone number: 7898452, Birthday : }
+2022-05-08 10:56:34,496 INFO o.e.App [main] Student = Student{idStudent= 4, name: Evange, surname: Cecato, Phone number: 4578954, Birthday : }
+2022-05-08 10:57:34,356 DEBUG o.e.D.StudentDAO [main] java.sql.SQLSyntaxErrorException: Unknown column 'birthDate' in 'field list'
+2022-05-08 10:57:34,364 DEBUG o.e.D.StudentDAO [main] java.sql.SQLSyntaxErrorException: Unknown column 'birthDate' in 'field list'
+2022-05-08 10:58:08,043 DEBUG o.e.D.StudentDAO [main] java.sql.SQLException: Parameter index out of range (4 > number of parameters, which is 3).
+2022-05-08 10:58:08,061 DEBUG o.e.D.StudentDAO [main] java.sql.SQLSyntaxErrorException: Unknown column 'birthDate' in 'field list'
+2022-05-08 10:58:37,636 DEBUG o.e.D.StudentDAO [main] java.sql.SQLException: Parameter index out of range (4 > number of parameters, which is 3).
+2022-05-08 10:58:37,667 INFO o.e.App [main] Student = Student{idStudent= 1, name: German, surname: Barrera, Phone number: 1234578, Birthday : }
+2022-05-08 10:58:37,668 INFO o.e.App [main] Student = Student{idStudent= 2, name: Marti, surname: Barrera, Phone number: 457812, Birthday : }
+2022-05-08 10:58:37,668 INFO o.e.App [main] Student = Student{idStudent= 3, name: Lean, surname: Barrea, Phone number: 7898452, Birthday : }
+2022-05-08 10:58:37,668 INFO o.e.App [main] Student = Student{idStudent= 4, name: Evange, surname: Cecato, Phone number: 4578954, Birthday : }
+2022-05-08 10:59:23,207 INFO o.e.App [main] Student = Student{idStudent= 1, name: German, surname: Barrera, Phone number: 1234578, Birthday : }
+2022-05-08 10:59:23,211 INFO o.e.App [main] Student = Student{idStudent= 2, name: Marti, surname: Barrera, Phone number: 457812, Birthday : }
+2022-05-08 10:59:23,211 INFO o.e.App [main] Student = Student{idStudent= 3, name: Lean, surname: Barrea, Phone number: 7898452, Birthday : }
+2022-05-08 10:59:23,211 INFO o.e.App [main] Student = Student{idStudent= 4, name: Evange, surname: Cecato, Phone number: 4578954, Birthday : }
+2022-05-08 10:59:23,211 INFO o.e.App [main] Student = Student{idStudent= 5, name: Jhon, surname: Barboza, Phone number: 456789, Birthday : }
+2022-05-08 11:04:01,544 INFO o.e.App [main] Student = Student{idStudent= 1, name: German, surname: Barrera, Phone number: 1234578, Birthday : }
+2022-05-08 11:04:01,546 INFO o.e.App [main] Student = Student{idStudent= 2, name: Marti, surname: Barrera, Phone number: 457812, Birthday : }
+2022-05-08 11:04:01,546 INFO o.e.App [main] Student = Student{idStudent= 3, name: Lean, surname: Barrea, Phone number: 7898452, Birthday : }
+2022-05-08 11:04:01,546 INFO o.e.App [main] Student = Student{idStudent= 4, name: Evange, surname: Cecato, Phone number: 4578954, Birthday : }
+2022-05-08 11:04:01,546 INFO o.e.App [main] Student = Student{idStudent= 5, name: Jhon, surname: Barboza, Phone number: 456789, Birthday : }
+2022-05-08 11:04:01,546 INFO o.e.App [main] Student = Student{idStudent= 6, name: Jhon, surname: Barboza, Phone number: 456789, Birthday : }
+2022-05-08 11:04:01,547 INFO o.e.App [main] Student = Student{idStudent= 7, name: Patrick, surname: Bertola, Phone number: 78946513, Birthday : }
+2022-05-08 11:08:43,256 INFO o.e.App [main] Student = Student{idStudent= 1, name: German, surname: Barrera, Phone number: 1234578, Birthday : }
+2022-05-08 11:08:43,258 INFO o.e.App [main] Student = Student{idStudent= 2, name: Marti, surname: Barrera, Phone number: 457812, Birthday : }
+2022-05-08 11:08:43,258 INFO o.e.App [main] Student = Student{idStudent= 3, name: Lean, surname: Barrea, Phone number: 7898452, Birthday : }
+2022-05-08 11:08:43,258 INFO o.e.App [main] Student = Student{idStudent= 4, name: Evange, surname: Cecato, Phone number: 4578954, Birthday : }
+2022-05-08 11:08:43,258 INFO o.e.App [main] Student = Student{idStudent= 5, name: Jhon, surname: Barboza, Phone number: 456789, Birthday : }
+2022-05-08 11:08:43,258 INFO o.e.App [main] Student = Student{idStudent= 6, name: Jhon, surname: Barboza, Phone number: 456789, Birthday : }
+2022-05-08 11:08:43,259 INFO o.e.App [main] Student = Student{idStudent= 7, name: Patrick, surname: Bertola, Phone number: 78946513, Birthday : }
+2022-05-08 11:08:43,259 INFO o.e.App [main] Student = Student{idStudent= 8, name: Jhon, surname: Barboza, Phone number: 456789, Birthday : }
+2022-05-08 11:08:43,259 INFO o.e.App [main] Student = Student{idStudent= 9, name: Patrick, surname: Bertola, Phone number: 78946513, Birthday : }
+2022-05-08 11:27:14,366 DEBUG o.e.D.StudentDAO [main] java.sql.SQLException: No value specified for parameter 1
+2022-05-08 11:27:14,395 INFO o.e.App [main] Student = Student{idStudent= 1, name: German, surname: Barrera, Phone number: 1234578, Birthday : }
+2022-05-08 11:27:14,395 INFO o.e.App [main] Student = Student{idStudent= 2, name: Marti, surname: Barreda, Phone number: 457812, Birthday : }
+2022-05-08 11:27:14,395 INFO o.e.App [main] Student = Student{idStudent= 3, name: Lean, surname: Barrea, Phone number: 7898452, Birthday : }
+2022-05-08 11:27:14,395 INFO o.e.App [main] Student = Student{idStudent= 4, name: Evange, surname: Cecato, Phone number: 4578954, Birthday : }
+2022-05-08 11:27:14,395 INFO o.e.App [main] Student = Student{idStudent= 5, name: Jhon, surname: Barboza, Phone number: 456789, Birthday : }
+2022-05-08 11:27:14,395 INFO o.e.App [main] Student = Student{idStudent= 7, name: Patrick, surname: Bertola, Phone number: 78946513, Birthday : }
+2022-05-08 11:27:14,396 INFO o.e.App [main] Student = Student{idStudent= 10, name: Jhon, surname: Barboza, Phone number: 456789, Birthday : }
+2022-05-08 11:27:14,396 INFO o.e.App [main] Student = Student{idStudent= 11, name: Patrick, surname: Bertola, Phone number: 78946513, Birthday : }
+2022-05-08 11:28:05,355 DEBUG o.e.D.StudentDAO [main] java.sql.SQLException: No value specified for parameter 1
+2022-05-08 11:28:05,388 INFO o.e.App [main] Student = Student{idStudent= 1, name: German, surname: Barrera, Phone number: 1234578, Birthday : }
+2022-05-08 11:28:05,388 INFO o.e.App [main] Student = Student{idStudent= 2, name: Marti, surname: Barreda, Phone number: 457812, Birthday : }
+2022-05-08 11:28:05,388 INFO o.e.App [main] Student = Student{idStudent= 3, name: Lean, surname: Barrea, Phone number: 7898452, Birthday : }
+2022-05-08 11:28:05,389 INFO o.e.App [main] Student = Student{idStudent= 4, name: Evange, surname: Cecato, Phone number: 4578954, Birthday : }
+2022-05-08 11:28:05,389 INFO o.e.App [main] Student = Student{idStudent= 5, name: Jhon, surname: Barboza, Phone number: 456789, Birthday : }
+2022-05-08 11:28:05,389 INFO o.e.App [main] Student = Student{idStudent= 7, name: Patrick, surname: Bertola, Phone number: 78946513, Birthday : }
+2022-05-08 11:28:05,389 INFO o.e.App [main] Student = Student{idStudent= 10, name: Jhon, surname: Barboza, Phone number: 456789, Birthday : }
+2022-05-08 11:28:05,389 INFO o.e.App [main] Student = Student{idStudent= 11, name: Patrick, surname: Bertola, Phone number: 78946513, Birthday : }
+2022-05-08 11:28:34,641 DEBUG o.e.D.StudentDAO [main] java.sql.SQLException: No value specified for parameter 1
+2022-05-08 11:28:34,673 INFO o.e.App [main] Student = Student{idStudent= 1, name: German, surname: Barrera, Phone number: 1234578, Birthday : }
+2022-05-08 11:28:34,674 INFO o.e.App [main] Student = Student{idStudent= 2, name: Marti, surname: Barreda, Phone number: 457812, Birthday : }
+2022-05-08 11:28:34,674 INFO o.e.App [main] Student = Student{idStudent= 3, name: Lean, surname: Barrea, Phone number: 7898452, Birthday : }
+2022-05-08 11:28:34,674 INFO o.e.App [main] Student = Student{idStudent= 4, name: Evange, surname: Cecato, Phone number: 4578954, Birthday : }
+2022-05-08 11:28:34,674 INFO o.e.App [main] Student = Student{idStudent= 5, name: Jhon, surname: Barboza, Phone number: 456789, Birthday : }
+2022-05-08 11:28:34,674 INFO o.e.App [main] Student = Student{idStudent= 7, name: Patrick, surname: Bertola, Phone number: 78946513, Birthday : }
+2022-05-08 11:28:34,675 INFO o.e.App [main] Student = Student{idStudent= 10, name: Jhon, surname: Barboza, Phone number: 456789, Birthday : }
+2022-05-08 11:28:34,675 INFO o.e.App [main] Student = Student{idStudent= 11, name: Patrick, surname: Bertola, Phone number: 78946513, Birthday : }
+2022-05-08 11:31:00,458 DEBUG o.e.D.StudentDAO [main] java.sql.SQLException: No value specified for parameter 1
+2022-05-08 11:31:00,495 INFO o.e.App [main] Student = Student{idStudent= 1, name: German, surname: Barrera, Phone number: 1234578, Birthday : }
+2022-05-08 11:31:00,496 INFO o.e.App [main] Student = Student{idStudent= 2, name: Marti, surname: Barreda, Phone number: 457812, Birthday : }
+2022-05-08 11:31:00,496 INFO o.e.App [main] Student = Student{idStudent= 3, name: Lean, surname: Barrea, Phone number: 7898452, Birthday : }
+2022-05-08 11:31:00,496 INFO o.e.App [main] Student = Student{idStudent= 4, name: Evange, surname: Cecato, Phone number: 4578954, Birthday : }
+2022-05-08 11:31:00,496 INFO o.e.App [main] Student = Student{idStudent= 5, name: Jhon, surname: Barboza, Phone number: 456789, Birthday : }
+2022-05-08 11:31:00,496 INFO o.e.App [main] Student = Student{idStudent= 7, name: Patrick, surname: Bertola, Phone number: 78946513, Birthday : }
+2022-05-08 11:31:00,496 INFO o.e.App [main] Student = Student{idStudent= 10, name: Jhon, surname: Barboza, Phone number: 456789, Birthday : }
+2022-05-08 11:31:00,496 INFO o.e.App [main] Student = Student{idStudent= 11, name: Patrick, surname: Bertola, Phone number: 78946513, Birthday : }
+2022-05-08 11:34:16,247 DEBUG o.e.D.StudentDAO [main] java.sql.SQLException: Parameter index out of range (7 > number of parameters, which is 2).
+2022-05-08 11:34:16,281 INFO o.e.App [main] Student = Student{idStudent= 1, name: German, surname: Barrera, Phone number: 1234578, Birthday : }
+2022-05-08 11:34:16,281 INFO o.e.App [main] Student = Student{idStudent= 2, name: Marti, surname: Barreda, Phone number: 457812, Birthday : }
+2022-05-08 11:34:16,281 INFO o.e.App [main] Student = Student{idStudent= 3, name: Lean, surname: Barrea, Phone number: 7898452, Birthday : }
+2022-05-08 11:34:16,281 INFO o.e.App [main] Student = Student{idStudent= 4, name: Evange, surname: Cecato, Phone number: 4578954, Birthday : }
+2022-05-08 11:34:16,282 INFO o.e.App [main] Student = Student{idStudent= 5, name: Jhon, surname: Barboza, Phone number: 456789, Birthday : }
+2022-05-08 11:34:16,282 INFO o.e.App [main] Student = Student{idStudent= 7, name: Patrick, surname: Bertola, Phone number: 78946513, Birthday : }
+2022-05-08 11:34:16,282 INFO o.e.App [main] Student = Student{idStudent= 10, name: Jhon, surname: Barboza, Phone number: 456789, Birthday : }
+2022-05-08 11:34:16,282 INFO o.e.App [main] Student = Student{idStudent= 11, name: Patrick, surname: Bertola, Phone number: 78946513, Birthday : }
+2022-05-08 11:34:53,922 DEBUG o.e.D.StudentDAO [main] java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 1
+2022-05-08 11:34:53,952 INFO o.e.App [main] Student = Student{idStudent= 1, name: German, surname: Barrera, Phone number: 1234578, Birthday : }
+2022-05-08 11:34:53,952 INFO o.e.App [main] Student = Student{idStudent= 2, name: Marti, surname: Barreda, Phone number: 457812, Birthday : }
+2022-05-08 11:34:53,952 INFO o.e.App [main] Student = Student{idStudent= 3, name: Lean, surname: Barrea, Phone number: 7898452, Birthday : }
+2022-05-08 11:34:53,952 INFO o.e.App [main] Student = Student{idStudent= 4, name: Evange, surname: Cecato, Phone number: 4578954, Birthday : }
+2022-05-08 11:34:53,952 INFO o.e.App [main] Student = Student{idStudent= 5, name: Jhon, surname: Barboza, Phone number: 456789, Birthday : }
+2022-05-08 11:34:53,952 INFO o.e.App [main] Student = Student{idStudent= 7, name: Patrick, surname: Bertola, Phone number: 78946513, Birthday : }
+2022-05-08 11:34:53,952 INFO o.e.App [main] Student = Student{idStudent= 10, name: Jhon, surname: Barboza, Phone number: 456789, Birthday : }
+2022-05-08 11:34:53,952 INFO o.e.App [main] Student = Student{idStudent= 11, name: Patrick, surname: Bertola, Phone number: 78946513, Birthday : }
+2022-05-08 11:35:47,825 DEBUG o.e.D.StudentDAO [main] java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 1
+2022-05-08 11:35:47,866 INFO o.e.App [main] Student = Student{idStudent= 1, name: German, surname: Barrera, Phone number: 1234578, Birthday : }
+2022-05-08 11:35:47,866 INFO o.e.App [main] Student = Student{idStudent= 2, name: Marti, surname: Barreda, Phone number: 457812, Birthday : }
+2022-05-08 11:35:47,866 INFO o.e.App [main] Student = Student{idStudent= 3, name: Lean, surname: Barrea, Phone number: 7898452, Birthday : }
+2022-05-08 11:35:47,866 INFO o.e.App [main] Student = Student{idStudent= 4, name: Evange, surname: Cecato, Phone number: 4578954, Birthday : }
+2022-05-08 11:35:47,866 INFO o.e.App [main] Student = Student{idStudent= 5, name: Jhon, surname: Barboza, Phone number: 456789, Birthday : }
+2022-05-08 11:35:47,866 INFO o.e.App [main] Student = Student{idStudent= 7, name: Patrick, surname: Bertola, Phone number: 78946513, Birthday : }
+2022-05-08 11:35:47,867 INFO o.e.App [main] Student = Student{idStudent= 10, name: Jhon, surname: Barboza, Phone number: 456789, Birthday : }
+2022-05-08 11:35:47,867 INFO o.e.App [main] Student = Student{idStudent= 11, name: Patrick, surname: Bertola, Phone number: 78946513, Birthday : }
+2022-05-08 11:36:41,462 DEBUG o.e.D.StudentDAO [main] java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 1
+2022-05-08 11:36:41,499 INFO o.e.App [main] Student = Student{idStudent= 1, name: German, surname: Barrera, Phone number: 1234578, Birthday : }
+2022-05-08 11:36:41,499 INFO o.e.App [main] Student = Student{idStudent= 2, name: Marti, surname: Barreda, Phone number: 457812, Birthday : }
+2022-05-08 11:36:41,499 INFO o.e.App [main] Student = Student{idStudent= 3, name: Lean, surname: Barrea, Phone number: 7898452, Birthday : }
+2022-05-08 11:36:41,499 INFO o.e.App [main] Student = Student{idStudent= 4, name: Evange, surname: Cecato, Phone number: 4578954, Birthday : }
+2022-05-08 11:36:41,499 INFO o.e.App [main] Student = Student{idStudent= 5, name: Jhon, surname: Barboza, Phone number: 456789, Birthday : }
+2022-05-08 11:36:41,500 INFO o.e.App [main] Student = Student{idStudent= 7, name: Patrick, surname: Bertola, Phone number: 78946513, Birthday : }
+2022-05-08 11:36:41,500 INFO o.e.App [main] Student = Student{idStudent= 10, name: Jhon, surname: Barboza, Phone number: 456789, Birthday : }
+2022-05-08 11:36:41,500 INFO o.e.App [main] Student = Student{idStudent= 11, name: Patrick, surname: Bertola, Phone number: 78946513, Birthday : }
+2022-05-08 11:36:58,064 DEBUG o.e.D.StudentDAO [main] java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 1
+2022-05-08 11:36:58,098 INFO o.e.App [main] Student = Student{idStudent= 1, name: German, surname: Barrera, Phone number: 1234578, Birthday : }
+2022-05-08 11:36:58,099 INFO o.e.App [main] Student = Student{idStudent= 2, name: Marti, surname: Barreda, Phone number: 457812, Birthday : }
+2022-05-08 11:36:58,099 INFO o.e.App [main] Student = Student{idStudent= 3, name: Lean, surname: Barrea, Phone number: 7898452, Birthday : }
+2022-05-08 11:36:58,099 INFO o.e.App [main] Student = Student{idStudent= 4, name: Evange, surname: Cecato, Phone number: 4578954, Birthday : }
+2022-05-08 11:36:58,099 INFO o.e.App [main] Student = Student{idStudent= 5, name: Jhon, surname: Barboza, Phone number: 456789, Birthday : }
+2022-05-08 11:36:58,099 INFO o.e.App [main] Student = Student{idStudent= 7, name: Patrick, surname: Bertola, Phone number: 78946513, Birthday : }
+2022-05-08 11:36:58,099 INFO o.e.App [main] Student = Student{idStudent= 10, name: Jhon, surname: Barboza, Phone number: 456789, Birthday : }
+2022-05-08 11:36:58,099 INFO o.e.App [main] Student = Student{idStudent= 11, name: Patrick, surname: Bertola, Phone number: 78946513, Birthday : }
+2022-05-08 11:37:53,000 DEBUG o.e.D.StudentDAO [main] java.sql.SQLException: Parameter index out of range (3 > number of parameters, which is 2).
+2022-05-08 11:37:53,035 INFO o.e.App [main] Student = Student{idStudent= 1, name: German, surname: Barrera, Phone number: 1234578, Birthday : }
+2022-05-08 11:37:53,035 INFO o.e.App [main] Student = Student{idStudent= 2, name: Marti, surname: Barreda, Phone number: 457812, Birthday : }
+2022-05-08 11:37:53,035 INFO o.e.App [main] Student = Student{idStudent= 3, name: Lean, surname: Barrea, Phone number: 7898452, Birthday : }
+2022-05-08 11:37:53,036 INFO o.e.App [main] Student = Student{idStudent= 4, name: Evange, surname: Cecato, Phone number: 4578954, Birthday : }
+2022-05-08 11:37:53,036 INFO o.e.App [main] Student = Student{idStudent= 5, name: Jhon, surname: Barboza, Phone number: 456789, Birthday : }
+2022-05-08 11:37:53,036 INFO o.e.App [main] Student = Student{idStudent= 7, name: Patrick, surname: Bertola, Phone number: 78946513, Birthday : }
+2022-05-08 11:37:53,036 INFO o.e.App [main] Student = Student{idStudent= 10, name: Jhon, surname: Barboza, Phone number: 456789, Birthday : }
+2022-05-08 11:37:53,036 INFO o.e.App [main] Student = Student{idStudent= 11, name: Patrick, surname: Bertola, Phone number: 78946513, Birthday : }
+2022-05-08 11:42:04,881 DEBUG o.e.D.StudentDAO [main] java.sql.SQLException: Parameter index out of range (3 > number of parameters, which is 2).
+2022-05-08 11:42:04,918 INFO o.e.App [main] Student = Student{idStudent= 1, name: German, surname: Barrera, Phone number: 1234578, Birthday : }
+2022-05-08 11:42:04,919 INFO o.e.App [main] Student = Student{idStudent= 2, name: Marti, surname: Barreda, Phone number: 457812, Birthday : }
+2022-05-08 11:42:04,919 INFO o.e.App [main] Student = Student{idStudent= 3, name: Lean, surname: Barrea, Phone number: 7898452, Birthday : }
+2022-05-08 11:42:04,919 INFO o.e.App [main] Student = Student{idStudent= 4, name: Evange, surname: Cecato, Phone number: 4578954, Birthday : }
+2022-05-08 11:42:04,919 INFO o.e.App [main] Student = Student{idStudent= 5, name: Jhon, surname: Barboza, Phone number: 456789, Birthday : }
+2022-05-08 11:42:04,919 INFO o.e.App [main] Student = Student{idStudent= 7, name: Patrick, surname: Bertola, Phone number: 78946513, Birthday : }
+2022-05-08 11:42:04,919 INFO o.e.App [main] Student = Student{idStudent= 10, name: Jhon, surname: Barboza, Phone number: 456789, Birthday : }
+2022-05-08 11:42:04,919 INFO o.e.App [main] Student = Student{idStudent= 11, name: Patrick, surname: Bertola, Phone number: 78946513, Birthday : }
+2022-05-08 11:44:12,120 DEBUG o.e.D.StudentDAO [main] java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 1
+2022-05-08 11:44:12,153 INFO o.e.App [main] Student = Student{idStudent= 1, name: German, surname: Barrera, Phone number: 1234578, Birthday : }
+2022-05-08 11:44:12,153 INFO o.e.App [main] Student = Student{idStudent= 2, name: Marti, surname: Barreda, Phone number: 457812, Birthday : }
+2022-05-08 11:44:12,153 INFO o.e.App [main] Student = Student{idStudent= 3, name: Lean, surname: Barrea, Phone number: 7898452, Birthday : }
+2022-05-08 11:44:12,153 INFO o.e.App [main] Student = Student{idStudent= 4, name: Evange, surname: Cecato, Phone number: 4578954, Birthday : }
+2022-05-08 11:44:12,153 INFO o.e.App [main] Student = Student{idStudent= 5, name: Jhon, surname: Barboza, Phone number: 456789, Birthday : }
+2022-05-08 11:44:12,153 INFO o.e.App [main] Student = Student{idStudent= 7, name: Patrick, surname: Bertola, Phone number: 78946513, Birthday : }
+2022-05-08 11:44:12,154 INFO o.e.App [main] Student = Student{idStudent= 10, name: Jhon, surname: Barboza, Phone number: 456789, Birthday : }
+2022-05-08 11:44:12,154 INFO o.e.App [main] Student = Student{idStudent= 11, name: Patrick, surname: Bertola, Phone number: 78946513, Birthday : }
+2022-05-08 11:44:30,845 DEBUG o.e.D.StudentDAO [main] java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 1
+2022-05-08 11:44:30,890 INFO o.e.App [main] Student = Student{idStudent= 1, name: German, surname: Barrera, Phone number: 1234578, Birthday : }
+2022-05-08 11:44:30,890 INFO o.e.App [main] Student = Student{idStudent= 2, name: Marti, surname: Barreda, Phone number: 457812, Birthday : }
+2022-05-08 11:44:30,890 INFO o.e.App [main] Student = Student{idStudent= 3, name: Lean, surname: Barrea, Phone number: 7898452, Birthday : }
+2022-05-08 11:44:30,890 INFO o.e.App [main] Student = Student{idStudent= 4, name: Evange, surname: Cecato, Phone number: 4578954, Birthday : }
+2022-05-08 11:44:30,890 INFO o.e.App [main] Student = Student{idStudent= 5, name: Jhon, surname: Barboza, Phone number: 456789, Birthday : }
+2022-05-08 11:44:30,891 INFO o.e.App [main] Student = Student{idStudent= 7, name: Patrick, surname: Bertola, Phone number: 78946513, Birthday : }
+2022-05-08 11:44:30,891 INFO o.e.App [main] Student = Student{idStudent= 10, name: Jhon, surname: Barboza, Phone number: 456789, Birthday : }
+2022-05-08 11:44:30,891 INFO o.e.App [main] Student = Student{idStudent= 11, name: Patrick, surname: Bertola, Phone number: 78946513, Birthday : }
+2022-05-08 11:46:52,712 DEBUG o.e.D.StudentDAO [main] java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 1
+2022-05-08 11:46:52,746 INFO o.e.App [main] Student = Student{idStudent= 1, name: German, surname: Barrera, Phone number: 1234578, Birthday : }
+2022-05-08 11:46:52,746 INFO o.e.App [main] Student = Student{idStudent= 2, name: Marti, surname: Barreda, Phone number: 457812, Birthday : }
+2022-05-08 11:46:52,746 INFO o.e.App [main] Student = Student{idStudent= 3, name: Lean, surname: Barrea, Phone number: 7898452, Birthday : }
+2022-05-08 11:46:52,747 INFO o.e.App [main] Student = Student{idStudent= 4, name: Evange, surname: Cecato, Phone number: 4578954, Birthday : }
+2022-05-08 11:46:52,747 INFO o.e.App [main] Student = Student{idStudent= 5, name: Jhon, surname: Barboza, Phone number: 456789, Birthday : }
+2022-05-08 11:46:52,747 INFO o.e.App [main] Student = Student{idStudent= 7, name: Patrick, surname: Bertola, Phone number: 78946513, Birthday : }
+2022-05-08 11:46:52,747 INFO o.e.App [main] Student = Student{idStudent= 10, name: Jhon, surname: Barboza, Phone number: 456789, Birthday : }
+2022-05-08 11:46:52,747 INFO o.e.App [main] Student = Student{idStudent= 11, name: Patrick, surname: Bertola, Phone number: 78946513, Birthday : }
+2022-05-08 11:51:07,943 DEBUG o.e.D.StudentDAO [main] java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 1
+2022-05-08 11:51:07,980 INFO o.e.App [main] Student = Student{idStudent= 1, name: German, surname: Barrera, Phone number: 1234578, Birthday : }
+2022-05-08 11:51:07,981 INFO o.e.App [main] Student = Student{idStudent= 2, name: Marti, surname: Barreda, Phone number: 457812, Birthday : }
+2022-05-08 11:51:07,981 INFO o.e.App [main] Student = Student{idStudent= 3, name: Lean, surname: Barrea, Phone number: 7898452, Birthday : }
+2022-05-08 11:51:07,981 INFO o.e.App [main] Student = Student{idStudent= 4, name: Evange, surname: Cecato, Phone number: 4578954, Birthday : }
+2022-05-08 11:51:07,981 INFO o.e.App [main] Student = Student{idStudent= 5, name: Jhon, surname: Barboza, Phone number: 456789, Birthday : }
+2022-05-08 11:51:07,981 INFO o.e.App [main] Student = Student{idStudent= 7, name: Patrick, surname: Bertola, Phone number: 78946513, Birthday : }
+2022-05-08 11:51:07,981 INFO o.e.App [main] Student = Student{idStudent= 10, name: Jhon, surname: Barboza, Phone number: 456789, Birthday : }
+2022-05-08 11:51:07,981 INFO o.e.App [main] Student = Student{idStudent= 11, name: Patrick, surname: Bertola, Phone number: 78946513, Birthday : }
+2022-05-08 11:52:03,656 DEBUG o.e.D.StudentDAO [main] java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 1
+2022-05-08 11:52:03,695 INFO o.e.App [main] Student = Student{idStudent= 1, name: German, surname: Barrera, Phone number: 1234578, Birthday : }
+2022-05-08 11:52:03,695 INFO o.e.App [main] Student = Student{idStudent= 2, name: Marti, surname: Barreda, Phone number: 457812, Birthday : }
+2022-05-08 11:52:03,695 INFO o.e.App [main] Student = Student{idStudent= 3, name: Lean, surname: Barrea, Phone number: 7898452, Birthday : }
+2022-05-08 11:52:03,695 INFO o.e.App [main] Student = Student{idStudent= 4, name: Evange, surname: Cecato, Phone number: 4578954, Birthday : }
+2022-05-08 11:52:03,696 INFO o.e.App [main] Student = Student{idStudent= 5, name: Jhon, surname: Barboza, Phone number: 456789, Birthday : }
+2022-05-08 11:52:03,696 INFO o.e.App [main] Student = Student{idStudent= 7, name: Patrick, surname: Bertola, Phone number: 78946513, Birthday : }
+2022-05-08 11:52:03,696 INFO o.e.App [main] Student = Student{idStudent= 10, name: Jhon, surname: Barboza, Phone number: 456789, Birthday : }
+2022-05-08 11:52:03,696 INFO o.e.App [main] Student = Student{idStudent= 11, name: Patrick, surname: Bertola, Phone number: 78946513, Birthday : }
+2022-05-08 11:52:25,346 INFO o.e.App [main] Student = Student{idStudent= 1, name: German, surname: Barrera, Phone number: 1234578, Birthday : }
+2022-05-08 11:52:25,348 INFO o.e.App [main] Student = Student{idStudent= 2, name: Marti, surname: Barreda, Phone number: 457812, Birthday : }
+2022-05-08 11:52:25,348 INFO o.e.App [main] Student = Student{idStudent= 3, name: Lean, surname: Barrea, Phone number: 7898452, Birthday : }
+2022-05-08 11:52:25,348 INFO o.e.App [main] Student = Student{idStudent= 4, name: Evange, surname: Cecato, Phone number: 4578954, Birthday : }
+2022-05-08 11:52:25,348 INFO o.e.App [main] Student = Student{idStudent= 5, name: Jhon, surname: Barboza, Phone number: 456789, Birthday : }
+2022-05-08 11:52:25,349 INFO o.e.App [main] Student = Student{idStudent= 7, name: Patrick, surname: Schutts, Phone number: 78946513, Birthday : }
+2022-05-08 11:52:25,349 INFO o.e.App [main] Student = Student{idStudent= 10, name: Jhon, surname: Barboza, Phone number: 456789, Birthday : }
+2022-05-08 11:52:25,349 INFO o.e.App [main] Student = Student{idStudent= 11, name: Patrick, surname: Bertola, Phone number: 78946513, Birthday : }
+2022-05-08 11:52:57,198 INFO o.e.App [main] Student = Student{idStudent= 1, name: German, surname: Barrera, Phone number: 1234578}
+2022-05-08 11:52:57,201 INFO o.e.App [main] Student = Student{idStudent= 2, name: Marti, surname: Barreda, Phone number: 457812}
+2022-05-08 11:52:57,201 INFO o.e.App [main] Student = Student{idStudent= 3, name: Lean, surname: Barrea, Phone number: 7898452}
+2022-05-08 11:52:57,201 INFO o.e.App [main] Student = Student{idStudent= 4, name: Evange, surname: Cecato, Phone number: 4578954}
+2022-05-08 11:52:57,201 INFO o.e.App [main] Student = Student{idStudent= 5, name: Jhon, surname: Barboza, Phone number: 456789}
+2022-05-08 11:52:57,201 INFO o.e.App [main] Student = Student{idStudent= 7, name: Patrick, surname: Schutts, Phone number: 78946513}
+2022-05-08 11:52:57,201 INFO o.e.App [main] Student = Student{idStudent= 10, name: Jhon, surname: Barboza, Phone number: 456789}
+2022-05-08 11:52:57,202 INFO o.e.App [main] Student = Student{idStudent= 11, name: Patrick, surname: Bertola, Phone number: 78946513}
+2022-05-08 11:54:50,617 INFO o.e.App [main] Student = Student{idStudent= 1, name: German, surname: Barrera, Phone number: 1234578}
+2022-05-08 11:54:50,619 INFO o.e.App [main] Student = Student{idStudent= 2, name: Marti, surname: Barreda, Phone number: 457812}
+2022-05-08 11:54:50,619 INFO o.e.App [main] Student = Student{idStudent= 3, name: Lean, surname: Barrea, Phone number: 7898452}
+2022-05-08 11:54:50,619 INFO o.e.App [main] Student = Student{idStudent= 4, name: Evange, surname: Cecato, Phone number: 4578954}
+2022-05-08 11:54:50,619 INFO o.e.App [main] Student = Student{idStudent= 5, name: Jhon, surname: Barboza, Phone number: 456789}
+2022-05-08 11:54:50,620 INFO o.e.App [main] Student = Student{idStudent= 7, name: Patrick, surname: Schutts, Phone number: 78946513}
+2022-05-08 11:54:50,620 INFO o.e.App [main] Student = Student{idStudent= 10, name: Jhon, surname: Barboza, Phone number: 456789}
+2022-05-08 11:54:50,620 INFO o.e.App [main] Student = Student{idStudent= 11, name: Patrick, surname: Bertola, Phone number: 78946513}
+2022-05-08 12:29:28,024 INFO o.e.App [main] Student = Student{idStudent= 1, name: German, surname: Barrera, Phone number: 1234578}
+2022-05-08 12:29:28,026 INFO o.e.App [main] Student = Student{idStudent= 2, name: Marti, surname: Barreda, Phone number: 457812}
+2022-05-08 12:29:28,026 INFO o.e.App [main] Student = Student{idStudent= 3, name: Lean, surname: Barrea, Phone number: 7898452}
+2022-05-08 12:29:28,026 INFO o.e.App [main] Student = Student{idStudent= 4, name: Evange, surname: Cecato, Phone number: 4578954}
+2022-05-08 12:29:28,026 INFO o.e.App [main] Student = Student{idStudent= 5, name: Jhon, surname: Barboza, Phone number: 456789}
+2022-05-08 12:29:28,026 INFO o.e.App [main] Student = Student{idStudent= 7, name: Patrick, surname: Schutts, Phone number: 78946513}
+2022-05-08 12:47:41,839 DEBUG o.e.D.StudentDAO [main] java.sql.SQLException: Parameter index out of range (4 > number of parameters, which is 1).
+2022-05-08 12:47:41,867 INFO o.e.App [main] Student = Student{idStudent= 1, name: German, surname: Barrera, Phone number: 1234578}
+2022-05-08 12:47:41,868 INFO o.e.App [main] Student = Student{idStudent= 2, name: Marti, surname: Barreda, Phone number: 457812}
+2022-05-08 12:47:41,868 INFO o.e.App [main] Student = Student{idStudent= 3, name: Lean, surname: Barrea, Phone number: 7898452}
+2022-05-08 12:47:41,868 INFO o.e.App [main] Student = Student{idStudent= 4, name: Evange, surname: Cecato, Phone number: 4578954}
+2022-05-08 12:47:41,868 INFO o.e.App [main] Student = Student{idStudent= 5, name: Jhon, surname: Barboza, Phone number: 456789}
+2022-05-08 12:47:41,868 INFO o.e.App [main] Student = Student{idStudent= 7, name: Patrick, surname: Schutts, Phone number: 78946513}
+2022-05-08 12:48:51,992 DEBUG o.e.D.StudentDAO [main] java.sql.SQLException: Parameter index out of range (4 > number of parameters, which is 1).
+2022-05-08 12:48:52,028 INFO o.e.App [main] Student = Student{idStudent= 1, name: German, surname: Barrera, Phone number: 1234578}
+2022-05-08 12:48:52,029 INFO o.e.App [main] Student = Student{idStudent= 2, name: Marti, surname: Barreda, Phone number: 457812}
+2022-05-08 12:48:52,029 INFO o.e.App [main] Student = Student{idStudent= 3, name: Lean, surname: Barrea, Phone number: 7898452}
+2022-05-08 12:48:52,029 INFO o.e.App [main] Student = Student{idStudent= 4, name: Evange, surname: Cecato, Phone number: 4578954}
+2022-05-08 12:48:52,029 INFO o.e.App [main] Student = Student{idStudent= 5, name: Jhon, surname: Barboza, Phone number: 456789}
+2022-05-08 12:48:52,029 INFO o.e.App [main] Student = Student{idStudent= 7, name: Patrick, surname: Schutts, Phone number: 78946513}
+2022-05-08 12:50:48,679 INFO o.e.App [main] Student = Student{idStudent= 2, name: Marti, surname: Barreda, Phone number: 457812}
+2022-05-08 12:50:48,681 INFO o.e.App [main] Student = Student{idStudent= 3, name: Lean, surname: Barrea, Phone number: 7898452}
+2022-05-08 12:50:48,681 INFO o.e.App [main] Student = Student{idStudent= 4, name: Evange, surname: Cecato, Phone number: 4578954}
+2022-05-08 12:50:48,681 INFO o.e.App [main] Student = Student{idStudent= 5, name: Jhon, surname: Barboza, Phone number: 456789}
+2022-05-08 12:50:48,681 INFO o.e.App [main] Student = Student{idStudent= 7, name: Patrick, surname: Schutts, Phone number: 78946513}
+2022-05-08 20:38:55,998 INFO o.e.App [main] Student{idStudent= 5, name: null, surname: null, Phone number: null}
+2022-05-08 20:42:54,016 DEBUG o.e.D.StudentDAO [main] java.sql.SQLException: Column 'name' not found.
+2022-05-08 20:42:54,037 INFO o.e.App [main] Student{idStudent= 5, name: null, surname: null, Phone number: null}
+2022-05-08 20:46:40,428 DEBUG o.e.D.StudentDAO [main] java.sql.SQLException: Column 'name' not found.
+2022-05-08 20:46:40,448 INFO o.e.App [main] Student{idStudent= 5, name: null, surname: null, Phone number: null}
+2022-05-08 20:48:50,906 DEBUG o.e.D.StudentDAO [main] java.sql.SQLException: No value specified for parameter 1
+2022-05-08 20:50:27,041 DEBUG o.e.D.StudentDAO [main] java.sql.SQLException: No value specified for parameter 1
+2022-05-08 20:50:58,421 DEBUG o.e.D.StudentDAO [main] java.sql.SQLException: No value specified for parameter 1
+2022-05-08 20:52:15,604 DEBUG o.e.D.StudentDAO [main] java.sql.SQLException: No value specified for parameter 1
+2022-05-08 20:55:23,539 DEBUG o.e.D.StudentDAO [main] java.sql.SQLException: No value specified for parameter 1
+2022-05-08 20:56:57,366 DEBUG o.e.D.StudentDAO [main] java.sql.SQLException: No value specified for parameter 1
+2022-05-08 20:58:18,855 DEBUG o.e.D.StudentDAO [main] java.sql.SQLException: No value specified for parameter 1
+2022-05-08 21:02:23,900 INFO o.e.App [main] Student{idStudent= 5, name: Jhon, surname: Barboza, Phone number: 456789}
+2022-05-08 21:03:01,974 INFO o.e.App [main] Student{idStudent= 5, name: null, surname: null, Phone number: null}
+2022-05-08 21:03:12,718 INFO o.e.App [main] Student{idStudent= 5, name: Jhon, surname: Barboza, Phone number: 456789}
