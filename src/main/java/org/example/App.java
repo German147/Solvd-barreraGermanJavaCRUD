@@ -24,9 +24,9 @@ public class App {
         /**
          * Here I UPDATE an existen element into the DB
          */
-       // StudentDAO studentDAO = new StudentDAO();
+       // IStudentDAO studentDAO = new IStudentDAO();
 //        Student modifyingStudent = new Student(7, "Patrick", "Schutts", "78946513");
-//        StudentDAO updateDAO1 = new StudentDAO();
+//        IStudentDAO updateDAO1 = new IStudentDAO();
 //        updateDAO1.updateEntity(modifyingStudent);
 
         /**

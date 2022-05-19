@@ -2,7 +2,7 @@ package org.example.service.serviceImpl;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import org.example.DAO.DAOImpl.StudentDAOImpl;
+import org.example.repositoryDAO.DAOImpl.StudentDAOImpl;
 import org.example.entity.Student;
 import org.example.exceptions.DAO_exception;
 import org.example.service.IStudentDAO;
