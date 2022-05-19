@@ -1,21 +1,20 @@
 package org.example.entity;
 
-public class City extends States
-{
+import java.util.List;
+
+public class City {
+
     private int idCity;
     private String cityName;
+    private List<Neighborhood> neighborhoodList;
 
-    public City(){
-        super();
-
+    public City() {
     }
 
-    public City(int idCountry, String name,
-                int idState, String stateName,
-                int idCity, String cityName) {
-        super(idCountry, name, idState, stateName);
+    public City(int idCity, String cityName, List<Neighborhood> neighborhoodList) {
         this.idCity = idCity;
         this.cityName = cityName;
+        this.neighborhoodList = neighborhoodList;
     }
 
     public int getIdCity() {
@@ -32,5 +31,22 @@ public class City extends States
 
     public void setCityName(String cityName) {
         this.cityName = cityName;
+    }
+
+    public List<Neighborhood> getNeighborhoodList() {
+        return neighborhoodList;
+    }
+
+    public void setNeighborhoodList(List<Neighborhood> neighborhoodList) {
+        this.neighborhoodList = neighborhoodList;
+    }
+
+    @Override
+    public String toString() {
+        return "City{" +
+                "idCity=" + idCity +
+                ", cityName='" + cityName + '\'' +
+                ", neighborhoodList=" + neighborhoodList +
+                '}';
     }
 }

@@ -1,14 +1,10 @@
 package org.example.entity;
 
-
-
-
 abstract class Person  {
+
     private String name;
     private String surname;
     private String phoneNumber;
-
-
 
     public Person() {
 
@@ -19,7 +15,6 @@ abstract class Person  {
         this.name = name;
         this.surname = surname;
         this.phoneNumber = phoneNumber;
-
     }
 
     public String getName() {
@@ -46,4 +41,12 @@ abstract class Person  {
         this.phoneNumber = phoneNumber;
     }
 
+    @Override
+    public String toString() {
+        return "Person{" +
+                "name='" + name + '\'' +
+                ", surname='" + surname + '\'' +
+                ", phoneNumber='" + phoneNumber + '\'' +
+                '}';
+    }
 }

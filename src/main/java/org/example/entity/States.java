@@ -1,21 +1,20 @@
 package org.example.entity;
 
-public class States  extends Country{
+import java.util.List;
+
+public class States {
+
     private int idState;
     private String stateName;
-
-    public States(int idCountry, String name) {
-        super(idCountry, name);
-    }
-
-    public States(int idCountry, String name, int idState, String stateName) {
-        super(idCountry, name);
-        this.idState = idState;
-        this.stateName = stateName;
-    }
+    private List<City> cityList;
 
     public States() {
-        super();
+    }
+
+    public States(int idState, String stateName, List<City> cityList) {
+        this.idState = idState;
+        this.stateName = stateName;
+        this.cityList = cityList;
     }
 
     public int getIdState() {
@@ -33,4 +32,22 @@ public class States  extends Country{
     public void setStateName(String stateName) {
         this.stateName = stateName;
     }
+
+    public List<City> getCityList() {
+        return cityList;
+    }
+
+    public void setCityList(List<City> cityList) {
+        this.cityList = cityList;
+    }
+
+    @Override
+    public String toString() {
+        return "States{" +
+                "idState=" + idState +
+                ", stateName='" + stateName + '\'' +
+                ", cityList=" + cityList +
+                '}';
+    }
 }
+

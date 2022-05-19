@@ -1,25 +1,28 @@
 package org.example.entity;
 
-public class Neighborhood extends States{
+import java.util.List;
 
-    private int idNeghborhood;
+public class Neighborhood{
+
+    private int idNeighborhood;
     private String neighborhoodName;
+    private List<Address> addressList;
 
-    public Neighborhood(int idCountry, String name,
-                        int idState, String stateName,
-                        int idNeghborhood,
-                        String neighborhoodName) {
-        super(idCountry, name, idState, stateName);
-        this.idNeghborhood = idNeghborhood;
+    public Neighborhood() {
+    }
+
+    public Neighborhood(int idNeighborhood, String neighborhoodName, List<Address> addressList) {
+        this.idNeighborhood = idNeighborhood;
         this.neighborhoodName = neighborhoodName;
+        this.addressList = addressList;
     }
 
-    public int getIdNeghborhood() {
-        return idNeghborhood;
+    public int getIdNeighborhood() {
+        return idNeighborhood;
     }
 
-    public void setIdNeghborhood(int idNeghborhood) {
-        this.idNeghborhood = idNeghborhood;
+    public void setIdNeighborhood(int idNeighborhood) {
+        this.idNeighborhood = idNeighborhood;
     }
 
     public String getNeighborhoodName() {
@@ -28,5 +31,22 @@ public class Neighborhood extends States{
 
     public void setNeighborhoodName(String neighborhoodName) {
         this.neighborhoodName = neighborhoodName;
+    }
+
+    public List<Address> getAddressList() {
+        return addressList;
+    }
+
+    public void setAddressList(List<Address> addressList) {
+        this.addressList = addressList;
+    }
+
+    @Override
+    public String toString() {
+        return "Neighborhood{" +
+                "idNeighborhood=" + idNeighborhood +
+                ", neighborhoodName='" + neighborhoodName + '\'' +
+                ", addressList=" + addressList +
+                '}';
     }
 }

@@ -1,27 +1,99 @@
 package org.example.entity;
 
+import java.util.List;
 
-import java.util.Date;
+public class Teacher extends Person {
 
-public class Teacher extends Person{
     private int idTeacher;
-    private String teacherSubject;
     private String teacherDepartment;
+    private Address teacherAddress;
+    private MedicalCertificates teacherMedicalCertificate;
+    private Subject teacherSubject;
+    private List<Course> courseList;
 
-    public Teacher(){
+    public Teacher() {
     }
-    public Teacher(int idTeacher){
+
+    public Teacher(int idTeacher, String teacherDepartment, Address teacherAddress,
+                   MedicalCertificates teacherMedicalCertificate, Subject teacherSubject,
+                   List<Course> courseList) {
         this.idTeacher = idTeacher;
-    }
-    public Teacher(int idTeacher, String teacherSubject, String teacherDepartment) {
-        this.idTeacher = idTeacher;
+        this.teacherDepartment = teacherDepartment;
+        this.teacherAddress = teacherAddress;
+        this.teacherMedicalCertificate = teacherMedicalCertificate;
         this.teacherSubject = teacherSubject;
+        this.courseList = courseList;
+    }
+
+    public Teacher(String name, String surname, String phoneNumber, int idTeacher,
+                   String teacherDepartment, Address teacherAddress,
+                   MedicalCertificates teacherMedicalCertificate, Subject teacherSubject, List<Course> courseList) {
+        super(name, surname, phoneNumber);
+        this.idTeacher = idTeacher;
+        this.teacherDepartment = teacherDepartment;
+        this.teacherAddress = teacherAddress;
+        this.teacherMedicalCertificate = teacherMedicalCertificate;
+        this.teacherSubject = teacherSubject;
+        this.courseList = courseList;
+    }
+
+    public int getIdTeacher() {
+        return idTeacher;
+    }
+
+    public void setIdTeacher(int idTeacher) {
+        this.idTeacher = idTeacher;
+    }
+
+    public String getTeacherDepartment() {
+        return teacherDepartment;
+    }
+
+    public void setTeacherDepartment(String teacherDepartment) {
         this.teacherDepartment = teacherDepartment;
     }
 
-    public Teacher(String name, String surname, String phoneNumber, Date birthDate,  int idTeacher, String teacherSubject, String teacherDepartment) {
-        this.idTeacher = idTeacher;
+    public Address getTeacherAddress() {
+        return teacherAddress;
+    }
+
+    public void setTeacherAddress(Address teacherAddress) {
+        this.teacherAddress = teacherAddress;
+    }
+
+    public MedicalCertificates getTeacherMedicalCertificate() {
+        return teacherMedicalCertificate;
+    }
+
+    public void setTeacherMedicalCertificate(MedicalCertificates teacherMedicalCertificate) {
+        this.teacherMedicalCertificate = teacherMedicalCertificate;
+    }
+
+    public Subject getTeacherSubject() {
+        return teacherSubject;
+    }
+
+    public void setTeacherSubject(Subject teacherSubject) {
         this.teacherSubject = teacherSubject;
-        this.teacherDepartment = teacherDepartment;
+    }
+
+    public List<Course> getCourseList() {
+        return courseList;
+    }
+
+    public void setCourseList(List<Course> courseList) {
+        this.courseList = courseList;
+    }
+
+    @Override
+    public String toString() {
+        return "Teacher{" +
+                "idTeacher=" + idTeacher +
+                ", teacherDepartment='" + teacherDepartment + '\'' +
+                ", teacherAddress=" + teacherAddress +
+                ", teacherMedicalCertificate=" + teacherMedicalCertificate +
+                ", teacherSubject=" + teacherSubject +
+                ", courseList=" + courseList +
+                '}';
     }
 }

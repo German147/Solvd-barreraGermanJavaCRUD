@@ -1,16 +1,20 @@
 package org.example.entity;
 
+import java.util.List;
+
 public class Country {
+
     private int idCountry;
     private String name;
-
-    public Country(int idCountry, String name) {
-        this.idCountry = idCountry;
-        this.name = name;
-    }
+    private List<States> statesList;
 
     public Country() {
+    }
 
+    public Country(int idCountry, String name, List<States> statesList) {
+        this.idCountry = idCountry;
+        this.name = name;
+        this.statesList = statesList;
     }
 
     public int getIdCountry() {
@@ -27,5 +31,22 @@ public class Country {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public List<States> getStatesList() {
+        return statesList;
+    }
+
+    public void setStatesList(List<States> statesList) {
+        this.statesList = statesList;
+    }
+
+    @Override
+    public String toString() {
+        return "Country{" +
+                "idCountry=" + idCountry +
+                ", name='" + name + '\'' +
+                ", statesList=" + statesList +
+                '}';
     }
 }
