@@ -5,8 +5,8 @@ import org.example.entity.Student;
 import java.util.List;
 import java.util.Optional;
 
-public interface IStudentService {
-
+public interface IStudentServicegettingLists {
+    // TODO: 20/05/2022
     ICreateSomething<List<Student>> studentList();
 
      Optional<Student> getStudentById(Integer integer);

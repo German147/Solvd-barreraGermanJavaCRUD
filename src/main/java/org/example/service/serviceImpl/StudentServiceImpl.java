@@ -5,14 +5,14 @@ import org.apache.logging.log4j.Logger;
 import org.example.repositoryDAO.DAOImpl.StudentDAOImpl;
 import org.example.entity.Student;
 import org.example.exceptions.DAO_exception;
-import org.example.service.IStudentDAO;
+import org.example.service.IStudentDAOService;
 
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
 
-public class StudentServiceImpl implements IStudentDAO {
+public class StudentServiceImpl implements IStudentDAOService {
 
     private static final Logger LOGGER = LogManager.getLogger(StudentServiceImpl.class);
     private static StudentDAOImpl studentDAOImpl = new StudentDAOImpl();

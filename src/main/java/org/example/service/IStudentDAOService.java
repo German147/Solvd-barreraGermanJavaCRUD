@@ -4,7 +4,7 @@ import org.example.entity.Student;
 
 import java.util.List;
 
-public interface IStudentDAO {
+public interface IStudentDAOService {
 
    List<Student> listStudentSDAO();
 

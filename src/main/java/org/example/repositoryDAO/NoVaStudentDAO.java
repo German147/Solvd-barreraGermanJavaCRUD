@@ -13,14 +13,14 @@
 //
 //import static org.example.JDBC.MyConectionToDB.*;
 //
-//public class IStudentDAO implements IEntity_DAO<Student> {
+//public class IStudentDAOService implements IEntity_DAO<Student> {
 //
 //    private static final String SQL_SELECT = "SELECT id_student, name, surname, phoneNumber FROM students";
 //    private static final String SQL_INSERT = "INSERT INTO students(name, surname, phoneNumber) VALUES (?,?,?)";
 //    private static final String SQL_UPDATE = "UPDATE students SET name = ?, surname = ?, phoneNumber = ? WHERE id_student = ?";
 //    private static final String SQL_DELETE = "DELETE FROM students WHERE id_student = ?";
 //    private static final String SQL_FIND_BY_ID = "SELECT FROM students WHERE id_student = ?";
-//    private static final Logger LOGGER = LogManager.getLogger(IStudentDAO.class);
+//    private static final Logger LOGGER = LogManager.getLogger(IStudentDAOService.class);
 //
 //    @Override
 //    public List<Student> listEntity() {

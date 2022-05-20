@@ -6,12 +6,12 @@
 //import org.example.entity.Student;
 //import org.example.service.ICreateSomething;
 //import org.example.service.IPrintSomething;
-//import org.example.service.IStudentService;
+//import org.example.service.IStudentServicegettingLists;
 //
 //import java.util.List;
 //import java.util.Optional;
 //
-//public class StudentServiceImpl implements IStudentService {
+//public class StudentServiceImpl implements IStudentServicegettingLists {
 //
 //    private static final Logger LOGGER = LogManager.getLogger(StudentServiceImpl.class);
 //

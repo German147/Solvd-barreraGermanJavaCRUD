@@ -1,36 +1,41 @@
 package org.example.entity;
 
-import org.example.ENUM.EGender;
 
-import java.sql.Date;
 import java.util.List;
 
 public class Tutor extends Person {
 
     private int idTutor;
-    private String tutorName;
-    private String tutorSurname;
     private Address tutorAddress;
     private List<Student> tutorStudentList;
 
     public Tutor() {
     }
 
-    public Tutor(int idTutor, String tutorName, String tutorSurname,
-                 Address tutorAddress, List<Student> tutorStudentList) {
+    public Tutor(int idTutor) {
         this.idTutor = idTutor;
-        this.tutorName = tutorName;
-        this.tutorSurname = tutorSurname;
+    }
+
+    public Tutor(int idTutor, Address tutorAddress, List<Student> tutorStudentList) {
+        this.idTutor = idTutor;
         this.tutorAddress = tutorAddress;
         this.tutorStudentList = tutorStudentList;
     }
 
-    public Tutor(String name, String surname, String phoneNumber, int idTutor, String tutorName,
-                 String tutorSurname, Address tutorAddress, List<Student> tutorStudentList) {
+
+    public Tutor(String name, String surname, String phoneNumber) {
+        super(name, surname, phoneNumber);
+    }
+
+    public Tutor(int idTutor, String name, String surname, String phoneNumber) {
         super(name, surname, phoneNumber);
         this.idTutor = idTutor;
-        this.tutorName = tutorName;
-        this.tutorSurname = tutorSurname;
+    }
+
+    public Tutor(String name, String surname, String phoneNumber, int idTutor,
+                 Address tutorAddress, List<Student> tutorStudentList) {
+        super(name, surname, phoneNumber);
+        this.idTutor = idTutor;
         this.tutorAddress = tutorAddress;
         this.tutorStudentList = tutorStudentList;
     }
@@ -41,22 +46,6 @@ public class Tutor extends Person {
 
     public void setIdTutor(int idTutor) {
         this.idTutor = idTutor;
-    }
-
-    public String getTutorName() {
-        return tutorName;
-    }
-
-    public void setTutorName(String tutorName) {
-        this.tutorName = tutorName;
-    }
-
-    public String getTutorSurname() {
-        return tutorSurname;
-    }
-
-    public void setTutorSurname(String tutorSurname) {
-        this.tutorSurname = tutorSurname;
     }
 
     public Address getTutorAddress() {
@@ -79,8 +68,6 @@ public class Tutor extends Person {
     public String toString() {
         return "Tutor{" +
                 "idTutor=" + idTutor +
-                ", tutorName='" + tutorName + '\'' +
-                ", tutorSurname='" + tutorSurname + '\'' +
                 ", tutorAddress=" + tutorAddress +
                 ", tutorStudentList=" + tutorStudentList +
                 '}';
