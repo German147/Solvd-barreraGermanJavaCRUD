@@ -6,7 +6,7 @@ public class Teacher extends Person {
 
     private int idTeacher;
     private String teacherDepartment;
-    private Address teacherAddress;
+    private int teacherAddress;
     private MedicalCertificates teacherMedicalCertificate;
     private Subject teacherSubject;
     private List<Course> courseList;
@@ -14,7 +14,18 @@ public class Teacher extends Person {
     public Teacher() {
     }
 
-    public Teacher(int idTeacher, String teacherDepartment, Address teacherAddress,
+    public Teacher(int idTeacher) {
+        this.idTeacher = idTeacher;
+    }
+    public Teacher(String name, String surname, String phoneNumber, int teacherAddress) {
+        super(name, surname, phoneNumber);
+        this.teacherAddress = teacherAddress;
+
+    }
+
+
+
+    public Teacher(int idTeacher, String teacherDepartment, int teacherAddress,
                    MedicalCertificates teacherMedicalCertificate, Subject teacherSubject,
                    List<Course> courseList) {
         this.idTeacher = idTeacher;
@@ -26,7 +37,7 @@ public class Teacher extends Person {
     }
 
     public Teacher(String name, String surname, String phoneNumber, int idTeacher,
-                   String teacherDepartment, Address teacherAddress,
+                   String teacherDepartment, int teacherAddress,
                    MedicalCertificates teacherMedicalCertificate, Subject teacherSubject, List<Course> courseList) {
         super(name, surname, phoneNumber);
         this.idTeacher = idTeacher;
@@ -53,11 +64,11 @@ public class Teacher extends Person {
         this.teacherDepartment = teacherDepartment;
     }
 
-    public Address getTeacherAddress() {
+    public int getTeacherAddress(int fk_id_address) {
         return teacherAddress;
     }
 
-    public void setTeacherAddress(Address teacherAddress) {
+    public void setTeacherAddress(int teacherAddress) {
         this.teacherAddress = teacherAddress;
     }
 
@@ -84,6 +95,7 @@ public class Teacher extends Person {
     public void setCourseList(List<Course> courseList) {
         this.courseList = courseList;
     }
+
 
     @Override
     public String toString() {

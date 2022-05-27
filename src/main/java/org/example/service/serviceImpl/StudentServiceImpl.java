@@ -2,23 +2,23 @@ package org.example.service.serviceImpl;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import org.example.repositoryDAO.DAOImpl.StudentDAOImpl;
 import org.example.entity.Student;
 import org.example.exceptions.DAO_exception;
-import org.example.service.IStudentDAOService;
+import org.example.repositoryDAO.DAOImpl.StudentDAOImpl;
+import org.example.service.IStudentService;
 
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
 
-public class StudentServiceImpl implements IStudentDAOService {
+public class StudentServiceImpl implements IStudentService {
 
     private static final Logger LOGGER = LogManager.getLogger(StudentServiceImpl.class);
     private static StudentDAOImpl studentDAOImpl = new StudentDAOImpl();
 
     @Override
-    public List<Student> listStudentSDAO() {
+    public List<Student> findAllStudents() {
         StudentDAOImpl studentDAO = null;
 
         List<Student> studentList = new ArrayList<>();
@@ -30,18 +30,18 @@ public class StudentServiceImpl implements IStudentDAOService {
     }
 
     @Override
-    public Student getStudentDAOById(Integer integer) {
+    public Student getStudentById(Integer integer) {
         Student student = null;
         try {
             student = studentDAOImpl.getById(integer);
         } catch (DAO_exception e) {
-            e.printStackTrace();
+            LOGGER.error(e.getMessage());
         }
         return student;
     }
 
     @Override
-    public void updateStudentDAO(Student student) {
+    public void updateStudent(Student student) {
         try {
             studentDAOImpl.update(student);
         } catch (DAO_exception e) {
@@ -51,7 +51,7 @@ public class StudentServiceImpl implements IStudentDAOService {
     }
 
     @Override
-    public void insertStudentDAO(Student student) {
+    public void insertStudent(Student student) {
         try {
             studentDAOImpl.insert(student);
         } catch (DAO_exception | SQLException e) {
@@ -60,7 +60,7 @@ public class StudentServiceImpl implements IStudentDAOService {
     }
 
     @Override
-    public void deleteStudentDAO(Student student) {
+    public void deleteStudentById(Student student) {
         try {
             studentDAOImpl.delete(student);
         } catch (DAO_exception e) {

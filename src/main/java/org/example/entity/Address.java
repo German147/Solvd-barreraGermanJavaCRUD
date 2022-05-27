@@ -15,7 +15,7 @@ public class Address {
         this.streetNumber = streetNumber;
     }
 
-    public int getIdAddress() {
+    public int getIdAddress(int fk_id_address) {
         return idAddress;
     }
 

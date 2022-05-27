@@ -5,7 +5,7 @@ import org.apache.logging.log4j.Logger;
 import org.example.JDBC.DBConnectionPool;
 import org.example.entity.Student;
 import org.example.exceptions.DAO_exception;
-import org.example.service.IDAO;
+import org.example.repositoryDAO.IStudentDAO;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -14,7 +14,7 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class StudentDAOImpl implements IDAO<Student, Integer> {
+public class StudentDAOImpl implements IStudentDAO {
 
     private static final String SQL_SELECT_ALL = "SELECT id_student, name, surname, phoneNumber FROM students";
     private static final String SQL_INSERT = "INSERT INTO students(id_student, name, surname, phoneNumber) VALUES (?,?,?,?)";
@@ -129,15 +129,14 @@ public class StudentDAOImpl implements IDAO<Student, Integer> {
     }
 
     @Override
-    public void insert(Student v) throws DAO_exception, SQLException {
-
+    public void insert(Student student) throws DAO_exception, SQLException {
         conn.setAutoCommit(false);
         PreparedStatement stmt = conn.prepareStatement(SQL_INSERT);
         try {
-            stmt.setInt(1, v.getIdStudent());
-            stmt.setString(2, v.getName());
-            stmt.setString(3, v.getSurname());
-            stmt.setString(4, v.getPhoneNumber());
+            stmt.setInt(1, student.getIdStudent());
+            stmt.setString(2, student.getName());
+            stmt.setString(3, student.getSurname());
+            stmt.setString(4, student.getPhoneNumber());
             //the next line update the state into the DB; used after-INSERT-UPDATE-DELETE
 
             if (stmt.executeUpdate() == 0) {

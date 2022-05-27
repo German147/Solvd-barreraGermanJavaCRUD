@@ -4,7 +4,7 @@
 //import org.apache.logging.log4j.Logger;
 //import org.example.JDBC.DBConnectionPool;
 //import org.example.entity.Student;
-//import org.example.service.IDAO;
+//import org.example.repositoryDAO.IDAO;
 //
 //import java.sql.Connection;
 //import java.sql.PreparedStatement;

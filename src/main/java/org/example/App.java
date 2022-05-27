@@ -2,10 +2,6 @@ package org.example;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import org.example.entity.Student;
-import org.example.service.serviceImpl.StudentServiceImpl;
-
-import java.util.List;
 
 
 /**
@@ -17,23 +13,37 @@ public class App {
 
     public static void main(String[] args) {
 
-        StudentServiceImpl service = new StudentServiceImpl();
-        List<Student> studentList1 = service.listStudentSDAO();
-        for (Student student : studentList1) {
-            LOGGER.info(student.toString() + student.getName());
-        }
+//        TutorServiceImpl service = new TutorServiceImpl();
+//        Tutor miguel = new Tutor(4,"Brandon","Ferreira","78946512");
+//        service.insertTutorDAO(miguel);
+//
+//        List<Tutor> tutorList = new ArrayList<>();
+//        tutorList = service.listTutorDAO();
+//        for (Tutor tutor : tutorList) {
+//            LOGGER.info(tutor.toString()+tutor.getName()+tutor.getSurname()+tutor.getPhoneNumber());
+//        }
+//                StudentServiceImpl service = new StudentServiceImpl();
+//                Student student1 = new Student("Sebastian","Kulfprit","789465");
+//        service.insertStudentDAO(student1);
+
+//        StudentServiceImpl service = new StudentServiceImpl();
+//        List<Student> studentList1 = service.listStudentSDAO();
+//        for (Student student : studentList1) {
+//            LOGGER.info(student.toString() + student.getName());
+//        }
 
         /**
          * Here I INSERT a new student to the DB
          */
-//        Student student1 = new Student("Raul","Ibraimovich","789465");
+//        StudentServiceImpl service = new StudentServiceImpl();
+//        Student student1 = new Student("Tim","Ibraimovich","789465");
 //        service.insertStudentDAO(student1);
         /**
          * Here I UPDATE an existen element into the DB
          */
-        // IStudentDAOService studentDAO = new IStudentDAOService();
+        // IStudentService studentDAO = new IStudentService();
 //        Student modifyingStudent = new Student(7, "Patrick", "Schutts", "78946513");
-//        IStudentDAOService updateDAO1 = new IStudentDAOService();
+//        IStudentService updateDAO1 = new IStudentService();
 //        updateDAO1.updateEntity(modifyingStudent);
 
         /**

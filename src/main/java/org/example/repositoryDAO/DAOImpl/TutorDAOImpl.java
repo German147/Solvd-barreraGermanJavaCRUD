@@ -16,7 +16,7 @@ import java.util.List;
 
 public class TutorDAOImpl implements ITutorDAO {
     private static final String SQL_SELECT_ALL = "SELECT id_tutor, name, surname, phoneNumber FROM tutors";
-    private static final String SQL_INSERT = "INSERT INTO tutors (id_tutor, name, surname, phoneNumber) VALUES (?,?,?,?)";
+    private static final String SQL_INSERT = "INSERT INTO tutors(id_tutor, name, surname, phoneNumber) VALUES (?,?,?,?)";
     private static final String SQL_UPDATE = "UPDATE tutors SET name = ?, surname = ?, phoneNumber = ? WHERE id_tutor = ?";
     private static final String SQL_DELETE = "DELETE FROM tutors WHERE id_tutor = ? ";
     private static final String SQL_FIND_BY_ID = "SELECT * FROM tutors WHERE id_tutor = ? ";
@@ -30,7 +30,8 @@ public class TutorDAOImpl implements ITutorDAO {
             name = rs.getString("name");
             String surname = rs.getString("surname");
             String phoneNumber = rs.getString("phoneNumber");
-             tutor= new Tutor(name, surname, phoneNumber); tutor.setIdTutor(rs.getInt("id_tutor"));
+             tutor= new Tutor(name, surname, phoneNumber);
+             tutor.setIdTutor(rs.getInt("id_tutor"));
         } catch (SQLException e) {
             throw new DAO_exception("The tutor could not be created. ", e);
         }
