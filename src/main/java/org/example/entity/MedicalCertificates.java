@@ -2,13 +2,12 @@ package org.example.entity;
 
 import org.example.XMLadapter.DateAdapter;
 
-import javax.xml.bind.annotation.XmlAttribute;
-import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlRootElement;
+import javax.xml.bind.annotation.*;
 import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 import java.util.Date;
 
 @XmlRootElement(name = "MedicalCertificates")
+@XmlAccessorType(XmlAccessType.FIELD)
 public class MedicalCertificates {
 
    @XmlAttribute(name = "idMedicalCertificate")
@@ -53,5 +52,14 @@ public class MedicalCertificates {
 
     public void setExpireDate(Date expireDate) {
         this.expireDate = expireDate;
+    }
+
+    @Override
+    public String toString() {
+        return "MedicalCertificates{" +
+                "idMedicalCertificate=" + idMedicalCertificate +
+                ", doctorName='" + doctorName + '\'' +
+                ", expireDate=" + expireDate +
+                '}';
     }
 }

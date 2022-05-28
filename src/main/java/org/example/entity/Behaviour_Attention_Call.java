@@ -1,10 +1,9 @@
 package org.example.entity;
 
-import javax.xml.bind.annotation.XmlAttribute;
-import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlRootElement;
+import javax.xml.bind.annotation.*;
 
 @XmlRootElement(name = "Behaviour_Attention_Call")
+@XmlAccessorType(XmlAccessType.FIELD)
 public class Behaviour_Attention_Call {
 
     @XmlAttribute(name = "idBehaviourCall")
@@ -12,9 +11,6 @@ public class Behaviour_Attention_Call {
 
     @XmlElement(name = "dateOfBehaviourCall",type = String.class)
     private String dateOfBehaviourCall;
-
-    @XmlElement(name = "detailOfBehaviour",type = String.class)
-    private String detailOfBehaviour;
 
     @XmlElement(name = "numberOfCall",type = Integer.class)
     private int numberOfCall;
@@ -26,10 +22,9 @@ public class Behaviour_Attention_Call {
     }
 
     public Behaviour_Attention_Call(int idBehaviourCall, String dateOfBehaviourCall,
-                                    String detailOfBehaviour, int numberOfCall, boolean isTutorAwareOf) {
+                                  int numberOfCall, boolean isTutorAwareOf) {
         this.idBehaviourCall = idBehaviourCall;
         this.dateOfBehaviourCall = dateOfBehaviourCall;
-        this.detailOfBehaviour = detailOfBehaviour;
         this.numberOfCall = numberOfCall;
         this.isTutorAwareOf = isTutorAwareOf;
     }
@@ -48,14 +43,6 @@ public class Behaviour_Attention_Call {
 
     public void setDateOfBehaviourCall(String dateOfBehaviourCall) {
         this.dateOfBehaviourCall = dateOfBehaviourCall;
-    }
-
-    public String getDetailOfBehaviour() {
-        return detailOfBehaviour;
-    }
-
-    public void setDetailOfBehaviour(String detailOfBehaviour) {
-        this.detailOfBehaviour = detailOfBehaviour;
     }
 
     public int getNumberOfCall() {
@@ -79,7 +66,6 @@ public class Behaviour_Attention_Call {
         return "Behaviour_Attention_Call{" +
                 "idBehaviourCall=" + idBehaviourCall +
                 ", dateOfBehaviourCall='" + dateOfBehaviourCall + '\'' +
-                ", detailOfBehaviour='" + detailOfBehaviour + '\'' +
                 ", numberOfCall=" + numberOfCall +
                 ", isTutorAwareOf=" + isTutorAwareOf +
                 '}';

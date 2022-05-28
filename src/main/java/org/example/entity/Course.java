@@ -1,12 +1,10 @@
 package org.example.entity;
 
-import javax.xml.bind.annotation.XmlAttribute;
-import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlElementWrapper;
-import javax.xml.bind.annotation.XmlRootElement;
+import javax.xml.bind.annotation.*;
 import java.util.List;
 
 @XmlRootElement(name ="Course")
+@XmlAccessorType(XmlAccessType.FIELD)
 public class Course {
 
     @XmlAttribute(name = "idCourse")
