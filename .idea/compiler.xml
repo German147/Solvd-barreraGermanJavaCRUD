@@ -10,5 +10,8 @@
         <module name="barreraGermanJavaCRUD" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="barreraGermanJavaCRUD" target="10" />
+    </bytecodeTargetLevel>
   </component>
 </project>
