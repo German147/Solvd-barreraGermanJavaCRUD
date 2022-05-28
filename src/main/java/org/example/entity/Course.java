@@ -1,13 +1,30 @@
 package org.example.entity;
 
+import javax.xml.bind.annotation.XmlAttribute;
+import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlElementWrapper;
+import javax.xml.bind.annotation.XmlRootElement;
 import java.util.List;
 
+@XmlRootElement(name ="Course")
 public class Course {
 
+    @XmlAttribute(name = "idCourse")
     private int idCourse;
+
+    @XmlElement(name = "courseName")
     private String courseName;
+
+    @XmlElementWrapper(name = "courseStudentList")
+    @XmlElement(name = "Student",type = Student.class)
     private List<Student> courseStudentList;
+
+    @XmlElementWrapper(name = "courseTeacherList")
+    @XmlElement(name = "Teacher",type = Teacher.class)
     private List<Teacher> courseTeacherList;
+
+    @XmlElementWrapper(name = "courseSubjectList")
+    @XmlElement(name = "Subject",type = Subject.class)
     private List<Subject> courseSubjectList;
 
     public Course() {

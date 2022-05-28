@@ -1,11 +1,25 @@
 package org.example.entity;
 
+import javax.xml.bind.annotation.XmlAttribute;
+import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlRootElement;
+
+@XmlRootElement(name = "Behaviour_Attention_Call")
 public class Behaviour_Attention_Call {
 
+    @XmlAttribute(name = "idBehaviourCall")
     private int idBehaviourCall;
+
+    @XmlElement(name = "dateOfBehaviourCall",type = String.class)
     private String dateOfBehaviourCall;
+
+    @XmlElement(name = "detailOfBehaviour",type = String.class)
     private String detailOfBehaviour;
+
+    @XmlElement(name = "numberOfCall",type = Integer.class)
     private int numberOfCall;
+
+    @XmlElement(name = "isTutorAwareOf",type = Boolean.class)
     private boolean isTutorAwareOf;
 
     public Behaviour_Attention_Call() {

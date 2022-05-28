@@ -1,9 +1,16 @@
 package org.example.entity;
 
+import javax.xml.bind.annotation.XmlAttribute;
+import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlRootElement;
 
+@XmlRootElement(name = "Lecture")
 public class Lecture {
 
+    @XmlAttribute(name = "idLecture")
     private int idLecture;
+
+    @XmlElement(name = "lectureTopic")
     private String lectureTopic;
 
     public Lecture() {

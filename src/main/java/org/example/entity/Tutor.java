@@ -1,12 +1,22 @@
 package org.example.entity;
 
-
+import javax.xml.bind.annotation.XmlAttribute;
+import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlElementWrapper;
+import javax.xml.bind.annotation.XmlRootElement;
 import java.util.List;
 
+@XmlRootElement(name = "Tutor")
 public class Tutor extends Person {
 
+    @XmlAttribute(name = "idTutor")
     private int idTutor;
+
+    @XmlElement(name ="tutorAddress")
     private Address tutorAddress;
+
+    @XmlElementWrapper(name = "tutorStudentList")
+    @XmlElement(name = "Studetn",type = Student.class)
     private List<Student> tutorStudentList;
 
     public Tutor() {

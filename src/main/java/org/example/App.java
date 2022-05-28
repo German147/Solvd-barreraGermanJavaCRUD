@@ -2,6 +2,13 @@ package org.example;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.example.entity.Student;
+import org.example.service.serviceImpl.StudentServiceImpl;
+
+import javax.xml.bind.JAXBContext;
+import javax.xml.bind.JAXBException;
+import javax.xml.bind.Marshaller;
+import java.io.File;
 
 
 /**
@@ -12,6 +19,20 @@ public class App {
     private static final Logger LOGGER = LogManager.getLogger(App.class);
 
     public static void main(String[] args) {
+
+        StudentServiceImpl service = new StudentServiceImpl();
+        Student student = new Student(7);
+        service.getStudentById(7);
+
+        try {
+            JAXBContext jaxbContext = JAXBContext.newInstance(Student.class);
+            Marshaller marshaller = jaxbContext.createMarshaller();
+            marshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true);
+            marshaller.marshal(student,new File("result.XML"));
+        } catch (JAXBException e) {
+            e.printStackTrace();
+        }
+
 
 //        TutorServiceImpl service = new TutorServiceImpl();
 //        Tutor miguel = new Tutor(4,"Brandon","Ferreira","78946512");

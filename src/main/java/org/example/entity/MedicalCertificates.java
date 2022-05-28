@@ -1,10 +1,23 @@
 package org.example.entity;
 
+import org.example.XMLadapter.DateAdapter;
+
+import javax.xml.bind.annotation.XmlAttribute;
+import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlRootElement;
+import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 import java.util.Date;
 
+@XmlRootElement(name = "MedicalCertificates")
 public class MedicalCertificates {
+
+   @XmlAttribute(name = "idMedicalCertificate")
     private int idMedicalCertificate;
+
+   @XmlElement(name = "doctorName")
     private String doctorName;
+
+   @XmlJavaTypeAdapter(DateAdapter.class)
     private Date expireDate;
 
     public MedicalCertificates() {
