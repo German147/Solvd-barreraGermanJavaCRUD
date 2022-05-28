@@ -2,6 +2,11 @@ package org.example;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.example.entity.Tutor;
+import org.example.service.serviceImpl.TutorServiceImpl;
+
+import java.util.ArrayList;
+import java.util.List;
 
 
 /**
@@ -18,7 +23,7 @@ public class App {
 //        service.insertTutorDAO(miguel);
 //
 //        List<Tutor> tutorList = new ArrayList<>();
-//        tutorList = service.listTutorDAO();
+//        tutorList = service.findAllTutors();
 //        for (Tutor tutor : tutorList) {
 //            LOGGER.info(tutor.toString()+tutor.getName()+tutor.getSurname()+tutor.getPhoneNumber());
 //        }
