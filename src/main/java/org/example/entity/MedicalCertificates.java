@@ -1,10 +1,18 @@
 package org.example.entity;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 import java.util.Date;
 
 public class MedicalCertificates {
+
+    @JsonProperty
     private int idMedicalCertificate;
+    @JsonProperty
     private String doctorName;
+    @JsonProperty
+    @JsonFormat(shape = JsonFormat.Shape.STRING,pattern = "dd/mm/yyyy")
     private Date expireDate;
 
     public MedicalCertificates() {

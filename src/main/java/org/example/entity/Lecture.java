@@ -1,9 +1,13 @@
 package org.example.entity;
 
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 public class Lecture {
 
+    @JsonProperty
     private int idLecture;
+    @JsonProperty
     private String lectureTopic;
 
     public Lecture() {

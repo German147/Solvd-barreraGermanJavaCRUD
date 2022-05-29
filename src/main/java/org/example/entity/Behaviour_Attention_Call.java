@@ -1,11 +1,18 @@
 package org.example.entity;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 public class Behaviour_Attention_Call {
 
+    @JsonProperty
     private int idBehaviourCall;
+    @JsonProperty
     private String dateOfBehaviourCall;
+    @JsonProperty
     private String detailOfBehaviour;
+    @JsonProperty
     private int numberOfCall;
+    @JsonProperty
     private boolean isTutorAwareOf;
 
     public Behaviour_Attention_Call() {

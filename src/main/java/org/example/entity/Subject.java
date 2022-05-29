@@ -1,11 +1,16 @@
 package org.example.entity;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 import java.util.List;
 
 public class Subject {
 
+    @JsonProperty
     private int idSubject;
+    @JsonProperty
     private String subjectName;
+    @JsonProperty
     private List<Lecture> lectureList;
 
     public Subject() {

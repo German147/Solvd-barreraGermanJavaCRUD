@@ -1,10 +1,15 @@
 package org.example;
 
+import com.fasterxml.jackson.databind.JavaType;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.example.entity.Student;
 import org.example.entity.Tutor;
 import org.example.service.serviceImpl.TutorServiceImpl;
 
+import java.io.File;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -17,6 +22,31 @@ public class App {
     private static final Logger LOGGER = LogManager.getLogger(App.class);
 
     public static void main(String[] args) {
+
+        ObjectMapper om = new ObjectMapper();
+
+
+        List<Student> studentList =
+        File file = new File("reultJSON_1");
+        if(!file.exists()){
+            try {
+                file.createNewFile();
+                om.writeValue(file,studentList);
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+
+
+        
+//        JavaType type = om.getTypeFactory().constructCollectionType(List.class, Student.class);
+
+//        try {
+//            List<Student> studentList = om.readValue(new File("reultJSON_1"),type);
+//        } catch (IOException e) {
+//            e.printStackTrace();
+//        }
+
 
 //        TutorServiceImpl service = new TutorServiceImpl();
 //        Tutor miguel = new Tutor(4,"Brandon","Ferreira","78946512");

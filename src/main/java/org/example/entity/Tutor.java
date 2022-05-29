@@ -1,12 +1,17 @@
 package org.example.entity;
 
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 import java.util.List;
 
 public class Tutor extends Person {
 
+    @JsonProperty
     private int idTutor;
+    @JsonProperty
     private Address tutorAddress;
+    @JsonProperty
     private List<Student> tutorStudentList;
 
     public Tutor() {
