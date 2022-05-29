@@ -7,7 +7,8 @@ import org.example.entity.*;
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;
 import javax.xml.bind.Marshaller;
-import java.io.File;
+import javax.xml.bind.Unmarshaller;
+import java.io.*;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
@@ -108,15 +109,40 @@ public class App {
         student.setAttention_callList(attention_callList);
         student.setStudentTutorList(tutorList);
 
-
+        JAXBContext jaxbContext = null;
         try {
-            JAXBContext jaxbContext = JAXBContext.newInstance(Student.class);
+            jaxbContext = JAXBContext.newInstance(Student.class);
             Marshaller marshaller = jaxbContext.createMarshaller();
-          //  marshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true);
-            marshaller.marshal(student,new File("result7.XML"));
+            marshaller.marshal(student,new File("result8.XML"));
+            marshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true);
+            StringWriter xmlWriter = new StringWriter();
+            marshaller.marshal(student, xmlWriter);
+            System.out.println(xmlWriter.toString());
+
+            Unmarshaller unmarshaller = jaxbContext.createUnmarshaller();
+            StringReader xmlReader = new StringReader(xmlWriter.toString());
+            Student outStudent = (Student) unmarshaller.unmarshal(xmlReader);
+            System.out.println("This is the unmarshall " + outStudent);
         } catch (JAXBException e) {
             e.printStackTrace();
         }
+
+
+
+
+
+//ANDREW APPROACH
+//            JAXBContext jaxbContext = JAXBContext.newInstance(Student.class);
+//            Marshaller marshaller = jaxbContext.createMarshaller();
+//          //  marshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true);
+//            marshaller.marshal(student,new File("result7.XML"));
+
+
+
+
+
+
+
 
 
 //        TutorServiceImpl service = new TutorServiceImpl();
