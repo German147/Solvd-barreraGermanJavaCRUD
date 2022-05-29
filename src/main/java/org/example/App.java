@@ -3,6 +3,7 @@ package org.example;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.example.entity.Tutor;
+import org.example.repositoryDAO.DAOImpl.MySessionDAOImpl;
 import org.example.service.serviceImpl.TutorServiceImpl;
 
 import java.util.ArrayList;
@@ -17,6 +18,10 @@ public class App {
     private static final Logger LOGGER = LogManager.getLogger(App.class);
 
     public static void main(String[] args) {
+
+        MySessionDAOImpl mdao = new MySessionDAOImpl();
+        String msqlVersion = mdao.getVersionMySql();
+        System.out.println(msqlVersion);
 
 //        TutorServiceImpl service = new TutorServiceImpl();
 //        Tutor miguel = new Tutor(4,"Brandon","Ferreira","78946512");
