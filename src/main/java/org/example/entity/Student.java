@@ -1,9 +1,5 @@
 package org.example.entity;
 
-import org.example.XMLadapter.DateAdapter;
-
-import javax.xml.bind.annotation.*;
-import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 import java.util.Date;
 import java.util.List;
 public class Student extends Person {
@@ -14,7 +10,7 @@ public class Student extends Person {
     private MedicalCertificates studentMedicalCertificates;
     private Course studentCourse;
     private List<Tutor> studentTutorList;
-    private List<Behaviour_Attention_Call> attention_callList;
+    private List<BehaviourAttentionCall> attention_callList;
 
     //@XmlTransient is used for passwords
 
@@ -37,7 +33,7 @@ public class Student extends Person {
     public Student(String name, String surname, String phoneNumber, int idStudent,
                    MedicalCertificates studentMedicalCertificates, Course studentCourse,
                    List<Tutor> studentTutorList,
-                   List<Behaviour_Attention_Call> attention_callList) {
+                   List<BehaviourAttentionCall> attention_callList) {
         super(name, surname, phoneNumber);
         this.idStudent = idStudent;
         this.studentMedicalCertificates = studentMedicalCertificates;
@@ -79,11 +75,11 @@ public class Student extends Person {
     }
 
 
-    public List<Behaviour_Attention_Call> getAttention_callList() {
+    public List<BehaviourAttentionCall> getAttention_callList() {
         return attention_callList;
     }
 
-    public void setAttention_callList(List<Behaviour_Attention_Call> attention_callList) {
+    public void setAttention_callList(List<BehaviourAttentionCall> attention_callList) {
         this.attention_callList = attention_callList;
     }
 

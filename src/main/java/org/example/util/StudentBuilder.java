@@ -50,7 +50,7 @@ public class StudentBuilder {
 
         Course course = new Course();
         course.setCourseName("3er A");
-        course.setIdCourse(001);
+        course.setIdCourse(1);
         course.setCourseStudentList(studentList);
         course.setCourseSubjectList(subjectList);
         course.setCourseTeacherList(teacherList);
@@ -61,13 +61,13 @@ public class StudentBuilder {
         md.setExpireDate(new Date(22 - 02 - 2005));
         md.setIdMedicalCertificate(0024);
 
-        List<Behaviour_Attention_Call> attention_callList = new ArrayList<>();
-        Behaviour_Attention_Call bhCall = new Behaviour_Attention_Call();
+        List<BehaviourAttentionCall> attention_callList = new ArrayList<>();
+        BehaviourAttentionCall bhCall = new BehaviourAttentionCall();
         bhCall.setIdBehaviourCall(91);
         bhCall.setDateOfBehaviourCall("14-05-07");
         bhCall.setNumberOfCall(1);
         bhCall.setTutorAwareOf(true);
-        Behaviour_Attention_Call bhCall1 = new Behaviour_Attention_Call();
+        BehaviourAttentionCall bhCall1 = new BehaviourAttentionCall();
         bhCall.setIdBehaviourCall(992);
         bhCall.setDateOfBehaviourCall("27-08-2021");
         bhCall.setNumberOfCall(2);

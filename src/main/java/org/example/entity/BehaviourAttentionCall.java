@@ -1,8 +1,6 @@
 package org.example.entity;
 
-import javax.xml.bind.annotation.*;
-
-public class Behaviour_Attention_Call {
+public class BehaviourAttentionCall {
 
     private int idBehaviourCall;
 
@@ -12,10 +10,10 @@ public class Behaviour_Attention_Call {
 
     private boolean isTutorAwareOf;
 
-    public Behaviour_Attention_Call() {
+    public BehaviourAttentionCall() {
     }
 
-    public Behaviour_Attention_Call(int idBehaviourCall, String dateOfBehaviourCall,
+    public BehaviourAttentionCall(int idBehaviourCall, String dateOfBehaviourCall,
                                   int numberOfCall, boolean isTutorAwareOf) {
         this.idBehaviourCall = idBehaviourCall;
         this.dateOfBehaviourCall = dateOfBehaviourCall;
@@ -57,7 +55,7 @@ public class Behaviour_Attention_Call {
 
     @Override
     public String toString() {
-        return "Behaviour_Attention_Call{" +
+        return "BehaviourAttentionCall{" +
                 "idBehaviourCall=" + idBehaviourCall +
                 ", dateOfBehaviourCall='" + dateOfBehaviourCall + '\'' +
                 ", numberOfCall=" + numberOfCall +
