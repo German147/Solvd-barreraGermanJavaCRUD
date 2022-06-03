@@ -1,11 +1,11 @@
-package org.example.repositoryDAO.DAOImpl;
+package org.example.repositoryDAO.MySqlDAOImpl;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.example.JDBC.DBConnectionPool;
-import org.example.entity.Tutor;
+import org.example.entity.Student;
 import org.example.exceptions.DAO_exception;
-import org.example.repositoryDAO.ITutorDAO;
+import org.example.repositoryDAO.IStudentDAO;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -14,40 +14,43 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class TutorDAOImpl implements ITutorDAO {
-    private static final String SQL_SELECT_ALL = "SELECT id_tutor, name, surname, phoneNumber FROM tutors";
-    private static final String SQL_INSERT = "INSERT INTO tutors(id_tutor, name, surname, phoneNumber) VALUES (?,?,?,?)";
-    private static final String SQL_UPDATE = "UPDATE tutors SET name = ?, surname = ?, phoneNumber = ? WHERE id_tutor = ?";
-    private static final String SQL_DELETE = "DELETE FROM tutors WHERE id_tutor = ? ";
-    private static final String SQL_FIND_BY_ID = "SELECT * FROM tutors WHERE id_tutor = ? ";
+public class StudentDAOImpl implements IStudentDAO {
+
+    private static final String SQL_SELECT_ALL = "SELECT id_student, name, surname, phoneNumber FROM students";
+    private static final String SQL_INSERT = "INSERT INTO students(id_student, name, surname, phoneNumber) VALUES (?,?,?,?)";
+    private static final String SQL_UPDATE = "UPDATE students SET name = ?, surname = ?, phoneNumber = ? WHERE id_student = ?";
+    private static final String SQL_DELETE = "DELETE FROM students WHERE id_student = ? ";
+    private static final String SQL_FIND_BY_ID = "SELECT * FROM students WHERE id_student = ? ";
     private static final Logger LOGGER = LogManager.getLogger(StudentDAOImpl.class);
     private Connection conn = DBConnectionPool.getInstance().getConnection();
 
-    private Tutor converInfo(ResultSet rs) throws DAO_exception {
+
+    private Student converInfo(ResultSet rs) throws DAO_exception {
         String name = null;
-        Tutor tutor = null;
+        Student student = null;
         try {
             name = rs.getString("name");
             String surname = rs.getString("surname");
             String phoneNumber = rs.getString("phoneNumber");
-             tutor= new Tutor(name, surname, phoneNumber);
-             tutor.setIdTutor(rs.getInt("id_tutor"));
+            student = new Student(name, surname, phoneNumber);
+            student.setIdStudent(rs.getInt("id_student"));
         } catch (SQLException e) {
-            throw new DAO_exception("The tutor could not be created. ", e);
+            throw new DAO_exception("The student could not be created. ", e);
         }
-        return tutor;
+        return student;
     }
 
     @Override
-    public List<Tutor> list() {
+    public List<Student> list() {
+
         PreparedStatement stmt = null;
         ResultSet rs = null;
-        List<Tutor> tutor = new ArrayList<>();
+        List<Student> student = new ArrayList<>();
         try {
             stmt = conn.prepareStatement(SQL_SELECT_ALL);
             rs = stmt.executeQuery();
             while (rs.next()) {
-                tutor.add(converInfo(rs));
+                student.add(converInfo(rs));
             }
             //the next line update the state into the DB; used after-INSERT-UPDATE-DELETE
             //stmt.executeUpdate();
@@ -62,25 +65,25 @@ public class TutorDAOImpl implements ITutorDAO {
             }
             DBConnectionPool.getInstance().freeConnection(conn);
         }
-        return tutor;
+        return student;
     }
 
     @Override
-    public Tutor getById(Integer id) throws DAO_exception {
+    public Student getById(Integer id) throws DAO_exception {
         PreparedStatement stmt = null;
         ResultSet rs = null;
-        Tutor tutor = null;
+        Student student = null;
         try {
             stmt = conn.prepareStatement(SQL_FIND_BY_ID);
             stmt.setInt(1, id);
             rs = stmt.executeQuery();
             if (rs.next()) {
-                tutor = converInfo(rs);
+                student = converInfo(rs);
             } else {
                 throw new DAO_exception("This register is not found ");
             }
             //the next line update the state into the DB; used after-INSERT-UPDATE-DELETE
-            // stmt.executeUpdate();
+           // stmt.executeUpdate();
         } catch (SQLException e) {
             LOGGER.info("Error en esta sentencia SQL");
             LOGGER.debug(e.getMessage());
@@ -101,42 +104,43 @@ public class TutorDAOImpl implements ITutorDAO {
                 DBConnectionPool.getInstance().freeConnection(conn);
             }
         }
-        return tutor;
+        return student;
     }
 
     @Override
-    public void update(Tutor tutor) throws DAO_exception {
+    public void update(Student student) throws DAO_exception {
         PreparedStatement stmt = null;
         try {
             stmt = conn.prepareStatement(SQL_UPDATE);
-            stmt.setString(1, tutor.getName());
-            stmt.setString(2, tutor.getSurname());
-            stmt.setString(3, tutor.getPhoneNumber());
-            stmt.setInt(4, tutor.getIdTutor());
+            stmt.setString(1, student.getName());
+            stmt.setString(2, student.getSurname());
+            stmt.setString(3, student.getPhoneNumber());
+            stmt.setInt(4, student.getIdStudent());
             //the next line update the state into the DB; used after-INSERT-UPDATE-DELETE
             if (stmt.executeUpdate() == 0) {
-                throw new DAO_exception("The tutor was not updated  ");
+                throw new DAO_exception("The student was not updated  ");
             }
         } catch (SQLException e) {
             LOGGER.debug(e);
         } finally {
             DBConnectionPool.getInstance().freeConnection(conn);
         }
+
     }
 
     @Override
-    public void insert(Tutor tutor) throws DAO_exception, SQLException {
+    public void insert(Student student) throws DAO_exception, SQLException {
         conn.setAutoCommit(false);
         PreparedStatement stmt = conn.prepareStatement(SQL_INSERT);
         try {
-            stmt.setInt(1, tutor.getIdTutor());
-            stmt.setString(2, tutor.getName());
-            stmt.setString(3, tutor.getSurname());
-            stmt.setString(4, tutor.getPhoneNumber());
+            stmt.setInt(1, student.getIdStudent());
+            stmt.setString(2, student.getName());
+            stmt.setString(3, student.getSurname());
+            stmt.setString(4, student.getPhoneNumber());
             //the next line update the state into the DB; used after-INSERT-UPDATE-DELETE
 
             if (stmt.executeUpdate() == 0) {
-                throw new DAO_exception("The tutor was not inserted ");
+                throw new DAO_exception("The student was not inserted ");
             }
             conn.commit();
         } catch (SQLException e) {
@@ -154,11 +158,11 @@ public class TutorDAOImpl implements ITutorDAO {
     }
 
     @Override
-    public void delete(Tutor tutor) throws DAO_exception {
+    public void delete(Student student) throws DAO_exception {
         PreparedStatement stmt = null;
         try {
             stmt = conn.prepareStatement(SQL_DELETE);
-            stmt.setInt(1, tutor.getIdTutor());
+            stmt.setInt(1, student.getIdStudent());
             if (stmt.executeUpdate() == 0) {
                 throw new DAO_exception("The delete could not be executed");
             }
