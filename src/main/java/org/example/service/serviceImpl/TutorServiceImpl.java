@@ -4,7 +4,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.example.entity.Tutor;
 import org.example.exceptions.DAO_exception;
-import org.example.repositoryDAO.MySqlDAOImpl.TutorDAOImpl;
+import org.example.repositoryDAO.DAOImpl.TutorDAOImpl;
 import org.example.service.ITutorService;
 
 import java.sql.SQLException;
