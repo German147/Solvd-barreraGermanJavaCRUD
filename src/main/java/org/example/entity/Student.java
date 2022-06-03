@@ -6,30 +6,14 @@ import javax.xml.bind.annotation.*;
 import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 import java.util.Date;
 import java.util.List;
-
-@XmlRootElement(name = "Student")
-@XmlAccessorType(XmlAccessType.FIELD)
 public class Student extends Person {
 
-    @XmlAttribute(name = "idStudent")
     private int idStudent;
 
-    @XmlJavaTypeAdapter(DateAdapter.class)
-    @XmlElement(name = "firstDayAtSchool")
     private Date firstDayAtSchool;
-
-    @XmlElement(name = "studentMedicalCertificates",type = MedicalCertificates.class)
     private MedicalCertificates studentMedicalCertificates;
-
-    @XmlElement(name = "studentCourse",type = Course.class)
     private Course studentCourse;
-
-    @XmlElementWrapper(name = "studentTutorList")
-    @XmlElement(name = "Tutor", type = Tutor.class)
     private List<Tutor> studentTutorList;
-
-    @XmlElementWrapper(name = "attention_callList")
-    @XmlElement(name = "Behaviour_Attention_Call")
     private List<Behaviour_Attention_Call> attention_callList;
 
     //@XmlTransient is used for passwords

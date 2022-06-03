@@ -2,20 +2,14 @@ package org.example.entity;
 
 import javax.xml.bind.annotation.*;
 
-@XmlRootElement(name = "Behaviour_Attention_Call")
-@XmlAccessorType(XmlAccessType.FIELD)
 public class Behaviour_Attention_Call {
 
-    @XmlAttribute(name = "idBehaviourCall")
     private int idBehaviourCall;
 
-    @XmlElement(name = "dateOfBehaviourCall",type = String.class)
     private String dateOfBehaviourCall;
 
-    @XmlElement(name = "numberOfCall",type = Integer.class)
     private int numberOfCall;
 
-    @XmlElement(name = "isTutorAwareOf",type = Boolean.class)
     private boolean isTutorAwareOf;
 
     public Behaviour_Attention_Call() {

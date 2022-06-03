@@ -3,18 +3,10 @@ package org.example.entity;
 import javax.xml.bind.annotation.*;
 import java.util.List;
 
-@XmlRootElement(name = "Tutor")
-@XmlAccessorType(XmlAccessType.FIELD)
 public class Tutor extends Person {
 
-    @XmlAttribute(name = "idTutor")
     private int idTutor;
-
-    @XmlElement(name ="tutorAddress")
     private Address tutorAddress;
-
-    @XmlElementWrapper(name = "tutorStudentList")
-    @XmlElement(name = "Studetn",type = Student.class)
     private List<Student> tutorStudentList;
 
     public Tutor() {
