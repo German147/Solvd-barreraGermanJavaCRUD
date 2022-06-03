@@ -1,5 +1,6 @@
 package org.example.entity;
 
+import javax.xml.bind.annotation.*;
 
 public class Lecture {
 

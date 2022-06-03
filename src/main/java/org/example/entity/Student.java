@@ -1,39 +1,44 @@
 package org.example.entity;
 
+import java.util.Date;
 import java.util.List;
-
-public class Student extends Person{
+public class Student extends Person {
 
     private int idStudent;
+
+    private Date firstDayAtSchool;
     private MedicalCertificates studentMedicalCertificates;
     private Course studentCourse;
     private List<Tutor> studentTutorList;
-    private List<Subject> studentSubjectList;
-    private List<Behaviour_Attention_Call> attention_callList;
+    private List<BehaviourAttentionCall> attention_callList;
+
+    //@XmlTransient is used for passwords
 
     public Student() {
     }
+
     public Student(int idStudent) {
         this.idStudent = idStudent;
     }
-    public Student(int idStudent,String name, String surname, String phoneNumber) {
+
+    public Student(int idStudent, String name, String surname, String phoneNumber) {
         super(name, surname, phoneNumber);
         this.idStudent = idStudent;
     }
+
     public Student(String name, String surname, String phoneNumber) {
         super(name, surname, phoneNumber);
     }
 
     public Student(String name, String surname, String phoneNumber, int idStudent,
                    MedicalCertificates studentMedicalCertificates, Course studentCourse,
-                   List<Tutor> studentTutorList, List<Subject> studentSubjectList,
-                   List<Behaviour_Attention_Call> attention_callList) {
+                   List<Tutor> studentTutorList,
+                   List<BehaviourAttentionCall> attention_callList) {
         super(name, surname, phoneNumber);
         this.idStudent = idStudent;
         this.studentMedicalCertificates = studentMedicalCertificates;
         this.studentCourse = studentCourse;
         this.studentTutorList = studentTutorList;
-        this.studentSubjectList = studentSubjectList;
         this.attention_callList = attention_callList;
     }
 
@@ -69,20 +74,21 @@ public class Student extends Person{
         this.studentTutorList = studentTutorList;
     }
 
-    public List<Subject> getStudentSubjectList() {
-        return studentSubjectList;
-    }
 
-    public void setStudentSubjectList(List<Subject> studentSubjectList) {
-        this.studentSubjectList = studentSubjectList;
-    }
-
-    public List<Behaviour_Attention_Call> getAttention_callList() {
+    public List<BehaviourAttentionCall> getAttention_callList() {
         return attention_callList;
     }
 
-    public void setAttention_callList(List<Behaviour_Attention_Call> attention_callList) {
+    public void setAttention_callList(List<BehaviourAttentionCall> attention_callList) {
         this.attention_callList = attention_callList;
+    }
+
+    public Date getFirstDayAtSchool() {
+        return firstDayAtSchool;
+    }
+
+    public void setFirstDayAtSchool(Date firstDayAtSchool) {
+        this.firstDayAtSchool = firstDayAtSchool;
     }
 
     @Override
@@ -92,7 +98,6 @@ public class Student extends Person{
                 ", studentMedicalCertificates=" + studentMedicalCertificates +
                 ", studentCourse=" + studentCourse +
                 ", studentTutorList=" + studentTutorList +
-                ", studentSubjectList=" + studentSubjectList +
                 ", attention_callList=" + attention_callList +
                 '}';
     }

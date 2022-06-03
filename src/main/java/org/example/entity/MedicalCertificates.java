@@ -1,8 +1,13 @@
 package org.example.entity;
 
+import org.example.XMLadapter.DateAdapter;
+
+import javax.xml.bind.annotation.*;
+import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 import java.util.Date;
 
 public class MedicalCertificates {
+
     private int idMedicalCertificate;
     private String doctorName;
     private Date expireDate;
@@ -40,5 +45,14 @@ public class MedicalCertificates {
 
     public void setExpireDate(Date expireDate) {
         this.expireDate = expireDate;
+    }
+
+    @Override
+    public String toString() {
+        return "MedicalCertificates{" +
+                "idMedicalCertificate=" + idMedicalCertificate +
+                ", doctorName='" + doctorName + '\'' +
+                ", expireDate=" + expireDate +
+                '}';
     }
 }
