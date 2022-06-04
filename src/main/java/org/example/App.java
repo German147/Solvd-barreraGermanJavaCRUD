@@ -2,6 +2,8 @@ package org.example;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.example.entity.Student;
+import org.example.service.serviceImpl.StudentServiceImpl;
 
 
 /**
@@ -12,6 +14,10 @@ public class App {
     private static final Logger LOGGER = LogManager.getLogger(App.class);
 
     public static void main(String[] args) {
+
+        StudentServiceImpl service = new StudentServiceImpl();
+        Student student2 = service.getStudentById(5);
+        LOGGER.info(student2.getName());
 
 //        TutorServiceImpl service = new TutorServiceImpl();
 //        Tutor miguel = new Tutor(4,"Brandon","Ferreira","78946512");
