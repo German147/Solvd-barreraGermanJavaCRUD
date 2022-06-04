@@ -1,25 +1,44 @@
 package org.example.entity;
 
+import java.util.Date;
+
 public class BehaviourAttentionCall {
 
     private int idBehaviourCall;
-
-    private String dateOfBehaviourCall;
-
+    private String detailOfBehaviour;
+    private Date dateOfBehaviourCall;
     private int numberOfCall;
-
     private boolean isTutorAwareOf;
 
     public BehaviourAttentionCall() {
     }
 
-    public BehaviourAttentionCall(int idBehaviourCall, String dateOfBehaviourCall,
-                                  int numberOfCall, boolean isTutorAwareOf) {
+    public BehaviourAttentionCall(int idBehaviourCall) {
         this.idBehaviourCall = idBehaviourCall;
+    }
+
+    public BehaviourAttentionCall(int idBehaviourCall,
+                                  String detailOfBehaviour,
+                                  Date dateOfBehaviourCall,
+                                  int numberOfCall,
+                                  boolean isTutorAwareOf) {
+        this.idBehaviourCall = idBehaviourCall;
+        this.detailOfBehaviour = detailOfBehaviour;
         this.dateOfBehaviourCall = dateOfBehaviourCall;
         this.numberOfCall = numberOfCall;
         this.isTutorAwareOf = isTutorAwareOf;
     }
+
+    public BehaviourAttentionCall(String detailOfBehaviour,
+                                  Date dateOfBehaviourCall,
+                                  int numberOfCall,
+                                  boolean isTutorAwareOf) {
+        this.detailOfBehaviour = detailOfBehaviour;
+        this.dateOfBehaviourCall = dateOfBehaviourCall;
+        this.numberOfCall = numberOfCall;
+        this.isTutorAwareOf = isTutorAwareOf;
+    }
+
 
     public int getIdBehaviourCall() {
         return idBehaviourCall;
@@ -29,11 +48,11 @@ public class BehaviourAttentionCall {
         this.idBehaviourCall = idBehaviourCall;
     }
 
-    public String getDateOfBehaviourCall() {
+    public Date getDateOfBehaviourCall() {
         return dateOfBehaviourCall;
     }
 
-    public void setDateOfBehaviourCall(String dateOfBehaviourCall) {
+    public void setDateOfBehaviourCall(Date dateOfBehaviourCall) {
         this.dateOfBehaviourCall = dateOfBehaviourCall;
     }
 
@@ -53,11 +72,20 @@ public class BehaviourAttentionCall {
         isTutorAwareOf = tutorAwareOf;
     }
 
+    public String getDetailOfBehaviour() {
+        return detailOfBehaviour;
+    }
+
+    public void setDetailOfBehaviour(String detailOfBehaviour) {
+        this.detailOfBehaviour = detailOfBehaviour;
+    }
+
     @Override
     public String toString() {
         return "BehaviourAttentionCall{" +
                 "idBehaviourCall=" + idBehaviourCall +
-                ", dateOfBehaviourCall='" + dateOfBehaviourCall + '\'' +
+                ", detailOfBehaviour='" + detailOfBehaviour + '\'' +
+                ", dateOfBehaviourCall=" + dateOfBehaviourCall +
                 ", numberOfCall=" + numberOfCall +
                 ", isTutorAwareOf=" + isTutorAwareOf +
                 '}';

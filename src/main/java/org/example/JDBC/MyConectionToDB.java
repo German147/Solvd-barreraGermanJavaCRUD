@@ -3,15 +3,21 @@ package org.example.JDBC;
 import org.jetbrains.annotations.NotNull;
 
 import java.sql.*;
+import java.util.Properties;
 
 
 public class MyConectionToDB {
 
-    private static final String JDBC = "jdbc:mysql://localhost:3306/barrera_german_crud";
-    private static final String JDBC_USER = "root";
-    private static final String JDBC_PASSWORD = "12345";
+    private static String JDBC = null;
+    private static String JDBC_USER = null;
+    private static String JDBC_PASSWORD = null;
 
-    public static Connection getConnection() throws SQLException {
+
+    public static final Connection getConnection() throws SQLException {
+        Properties properties = new Properties();
+        JDBC = properties.getProperty("driver.class.name");
+        JDBC_USER = properties.getProperty("datasource.username");
+        JDBC_PASSWORD = properties.getProperty("datasource.password");
         return DriverManager.getConnection(JDBC, JDBC_USER, JDBC_PASSWORD);
     }
 

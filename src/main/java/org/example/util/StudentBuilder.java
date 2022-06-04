@@ -64,12 +64,10 @@ public class StudentBuilder {
         List<BehaviourAttentionCall> attention_callList = new ArrayList<>();
         BehaviourAttentionCall bhCall = new BehaviourAttentionCall();
         bhCall.setIdBehaviourCall(91);
-        bhCall.setDateOfBehaviourCall("14-05-07");
         bhCall.setNumberOfCall(1);
         bhCall.setTutorAwareOf(true);
         BehaviourAttentionCall bhCall1 = new BehaviourAttentionCall();
         bhCall.setIdBehaviourCall(992);
-        bhCall.setDateOfBehaviourCall("27-08-2021");
         bhCall.setNumberOfCall(2);
         bhCall.setTutorAwareOf(false);
 

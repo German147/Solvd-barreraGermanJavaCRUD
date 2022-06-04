@@ -2,17 +2,10 @@ package org.example;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import org.example.entity.*;
-import org.example.util.StudentBuilder;
-
-import javax.xml.bind.JAXBContext;
-import javax.xml.bind.JAXBException;
-import javax.xml.bind.Marshaller;
-import javax.xml.bind.Unmarshaller;
-import java.io.*;
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.List;
+import org.example.entity.BehaviourAttentionCall;
+import org.example.entity.Student;
+import org.example.service.serviceImpl.BehaviourAttentionCallServiceImpl;
+import org.example.service.serviceImpl.StudentServiceImpl;
 
 
 /**
@@ -24,7 +17,16 @@ public class App {
 
     public static void main(String[] args) {
 
+        StudentServiceImpl service = new StudentServiceImpl();
+        Student student2 = new Student(7);
+        service.getStudentById(7);
+        LOGGER.info(student2.toString() + student2.getName());
 
+//        BehaviourAttentionCallServiceImpl daoAttCall = new BehaviourAttentionCallServiceImpl();
+//        BehaviourAttentionCall attCall = new BehaviourAttentionCall(2);
+//
+//        daoAttCall.getBehaviourAttentionCallById(2);
+//        System.out.println(attCall.toString() + attCall.getDetailOfBehaviour());
 
 
 //ANDREW APPROACH
@@ -43,10 +45,10 @@ public class App {
 
 //        TutorServiceImpl service = new TutorServiceImpl();
 //        Tutor miguel = new Tutor(4,"Brandon","Ferreira","78946512");
-//        service.insertTutorDAO(miguel);
+//        service.insertTutor(miguel);
 //
 //        List<Tutor> tutorList = new ArrayList<>();
-//        tutorList = service.listTutorDAO();
+//        tutorList = service.findAllTutors();
 //        for (Tutor tutor : tutorList) {
 //            LOGGER.info(tutor.toString()+tutor.getName()+tutor.getSurname()+tutor.getPhoneNumber());
 //        }
