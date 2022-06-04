@@ -12,7 +12,6 @@ public class Student extends Person {
     private List<Tutor> studentTutorList;
     private List<BehaviourAttentionCall> attention_callList;
 
-    //@XmlTransient is used for passwords
 
     public Student() {
     }
@@ -30,12 +29,11 @@ public class Student extends Person {
         super(name, surname, phoneNumber);
     }
 
-    public Student(String name, String surname, String phoneNumber, int idStudent,
+    public Student(String name, String surname, String phoneNumber,
                    MedicalCertificates studentMedicalCertificates, Course studentCourse,
                    List<Tutor> studentTutorList,
                    List<BehaviourAttentionCall> attention_callList) {
         super(name, surname, phoneNumber);
-        this.idStudent = idStudent;
         this.studentMedicalCertificates = studentMedicalCertificates;
         this.studentCourse = studentCourse;
         this.studentTutorList = studentTutorList;

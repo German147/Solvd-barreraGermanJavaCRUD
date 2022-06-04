@@ -1,9 +1,5 @@
 package org.example.entity;
 
-import org.example.XMLadapter.DateAdapter;
-
-import javax.xml.bind.annotation.*;
-import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 import java.util.Date;
 
 public class MedicalCertificates {
@@ -13,6 +9,10 @@ public class MedicalCertificates {
     private Date expireDate;
 
     public MedicalCertificates() {
+    }
+
+    public MedicalCertificates(int idMedicalCertificate) {
+        this.idMedicalCertificate = idMedicalCertificate;
     }
 
     public MedicalCertificates(int idMedicalCertificate,

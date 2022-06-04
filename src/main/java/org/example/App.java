@@ -23,28 +23,6 @@ public class App {
     private static final Logger LOGGER = LogManager.getLogger(App.class);
 
     public static void main(String[] args) {
-        StudentBuilder student1 = new StudentBuilder();
-        Student student = student1.buildStudent();
-
-
-        JAXBContext jaxbContext = null;
-        try {
-            jaxbContext = JAXBContext.newInstance(Student.class);
-            Marshaller marshaller = jaxbContext.createMarshaller();
-            marshaller.marshal(student,new File("result8.XML"));
-            marshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true);
-            StringWriter xmlWriter = new StringWriter();
-            marshaller.marshal(student, xmlWriter);
-            System.out.println(xmlWriter.toString());
-
-            Unmarshaller unmarshaller = jaxbContext.createUnmarshaller();
-            StringReader xmlReader = new StringReader(xmlWriter.toString());
-            Student outStudent = (Student) unmarshaller.unmarshal(xmlReader);
-            System.out.println("This is the unmarshall " + outStudent);
-        } catch (JAXBException e) {
-            e.printStackTrace();
-        }
-
 
 
 
