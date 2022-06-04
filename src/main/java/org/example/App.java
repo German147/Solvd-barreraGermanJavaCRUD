@@ -2,9 +2,8 @@ package org.example;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-
-
-import java.util.List;
+import org.example.entity.Student;
+import org.example.service.serviceImpl.StudentServiceImpl;
 
 
 /**
@@ -37,40 +36,16 @@ public class App {
         }
 
 
-//        StudentServiceImpl service = new StudentServiceImpl();
-//        List<Student> studentList = service.findAllStudents();
-//        System.out.println(studentList);
-//        Student student2 = new Student(7);
-//        service.getStudentById(7);
-//        LOGGER.info( student2.getName());
-
-//        BehaviourAttentionCallServiceImpl daoAttCall = new BehaviourAttentionCallServiceImpl();
-//        BehaviourAttentionCall attCall = new BehaviourAttentionCall(2);
-//
-//        daoAttCall.getBehaviourAttentionCallById(2);
-//        System.out.println(attCall.toString() + attCall.getDetailOfBehaviour());
-
-
-//ANDREW APPROACH
-//            JAXBContext jaxbContext = JAXBContext.newInstance(Student.class);
-//            Marshaller marshaller = jaxbContext.createMarshaller();
-//          //  marshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true);
-//            marshaller.marshal(student,new File("result7.XML"));
-
-
-
-
-
-
-
-
+        StudentServiceImpl service = new StudentServiceImpl();
+        Student student2 = service.getStudentById(5);
+        LOGGER.info(student2.getName());
 
 //        TutorServiceImpl service = new TutorServiceImpl();
 //        Tutor miguel = new Tutor(4,"Brandon","Ferreira","78946512");
-//        service.insertTutor(miguel);
+//        service.insertTutorDAO(miguel);
 //
 //        List<Tutor> tutorList = new ArrayList<>();
-//        tutorList = service.findAllTutors();
+//        tutorList = service.listTutorDAO();
 //        for (Tutor tutor : tutorList) {
 //            LOGGER.info(tutor.toString()+tutor.getName()+tutor.getSurname()+tutor.getPhoneNumber());
 //        }
