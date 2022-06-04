@@ -5,7 +5,6 @@ import java.util.List;
 public class Student extends Person {
 
     private int idStudent;
-
     private Date firstDayAtSchool;
     private MedicalCertificates studentMedicalCertificates;
     private Course studentCourse;
