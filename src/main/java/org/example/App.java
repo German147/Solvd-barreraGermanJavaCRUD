@@ -3,7 +3,12 @@ package org.example;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.example.entity.Student;
+import org.example.entity.Tutor;
 import org.example.service.serviceImpl.StudentServiceImpl;
+import org.example.service.serviceImpl.TutorServiceImpl;
+
+import java.util.ArrayList;
+import java.util.List;
 
 
 /**
@@ -36,19 +41,27 @@ public class App {
         }
 
 
-        StudentServiceImpl service = new StudentServiceImpl();
-        Student student2 = service.getStudentById(5);
-        LOGGER.info(student2.getName());
+//        StudentServiceImpl service = new StudentServiceImpl();
+//        Student student2 = service.getStudentById(5);
+//        LOGGER.info(student2.getName());
 
-//        TutorServiceImpl service = new TutorServiceImpl();
-//        Tutor miguel = new Tutor(4,"Brandon","Ferreira","78946512");
-//        service.insertTutorDAO(miguel);
-//
+
+
+       TutorServiceImpl service = new TutorServiceImpl();
+       Tutor miguel = new Tutor(5,"Miguel","Carrascosa","78946512");
+        service.insertTutor(miguel);
+
+        Tutor Miguel = new Tutor(5);
+        miguel = service.getTutorById(5);
+        System.out.println(miguel.getName() + " " + miguel.getSurname() + " his phone is " + miguel.getPhoneNumber());
+
 //        List<Tutor> tutorList = new ArrayList<>();
-//        tutorList = service.listTutorDAO();
+//        tutorList = service.findAllTutors();
 //        for (Tutor tutor : tutorList) {
 //            LOGGER.info(tutor.toString()+tutor.getName()+tutor.getSurname()+tutor.getPhoneNumber());
 //        }
+
+
 //                StudentServiceImpl service = new StudentServiceImpl();
 //                Student student1 = new Student("Sebastian","Kulfprit","789465");
 //        service.insertStudentDAO(student1);
