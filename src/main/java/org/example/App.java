@@ -2,13 +2,6 @@ package org.example;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import org.example.entity.Student;
-import org.example.entity.Tutor;
-import org.example.service.serviceImpl.StudentServiceImpl;
-import org.example.service.serviceImpl.TutorServiceImpl;
-
-import java.util.ArrayList;
-import java.util.List;
 
 
 /**
@@ -25,15 +18,15 @@ public class App {
 //        LOGGER.info(student2.getName());
 
 
+//       TutorServiceImpl service = new TutorServiceImpl();
+//       Tutor miguel = new Tutor(5,"Miguel","Carrascosa","78946512");
+//        service.insertTutor(miguel);
+//
+//       Tutor Miguel = new Tutor(5);
+//        miguel = service.getTutorById(5);
+//        System.out.println(miguel.getName() + " " + miguel.getSurname() + " his phone is " + miguel.getPhoneNumber());
 
-       TutorServiceImpl service = new TutorServiceImpl();
-       Tutor miguel = new Tutor(5,"Miguel","Carrascosa","78946512");
-        service.insertTutor(miguel);
-
-        Tutor Miguel = new Tutor(5);
-        miguel = service.getTutorById(5);
-        System.out.println(miguel.getName() + " " + miguel.getSurname() + " his phone is " + miguel.getPhoneNumber());
-
+//        service.deleteTutorById(Miguel);
 //        List<Tutor> tutorList = new ArrayList<>();
 //        tutorList = service.findAllTutors();
 //        for (Tutor tutor : tutorList) {
