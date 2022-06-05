@@ -5,17 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3271f30d-7386-4541-9365-5c37ae31141a" name="Changes" comment="Se crea el paquetre UTIL para implementar StudentBuilder y trasladar la creacion de un estudiande del main a esta clase particular.">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/repositoryDAO/MySqlDAOImpl/BehaviourAttentionCallDAOImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/service/IBehaviourAttentionCall.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/service/serviceImpl/BehaviourAttentionCallServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/JDBC/MyConectionToDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/JDBC/MyConectionToDB.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/entity/BehaviourAttentionCall.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/entity/BehaviourAttentionCall.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/entity/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/entity/Student.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/repositoryDAO/Behaviour_Attention_Call_DAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/repositoryDAO/IBehaviourAttentionCallDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/util/StudentBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/util/StudentBuilder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/connection-INF.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/connection-INF.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/repositoryDAO/MySqlDAOImpl/StudentDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/repositoryDAO/MySqlDAOImpl/StudentDAOImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

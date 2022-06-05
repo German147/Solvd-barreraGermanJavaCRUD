@@ -20,7 +20,7 @@ public class App {
         StudentServiceImpl service = new StudentServiceImpl();
         Student student2 = new Student(7);
         service.getStudentById(7);
-        LOGGER.info(student2.toString() + student2.getName());
+        LOGGER.info( student2.getName());
 
 //        BehaviourAttentionCallServiceImpl daoAttCall = new BehaviourAttentionCallServiceImpl();
 //        BehaviourAttentionCall attCall = new BehaviourAttentionCall(2);

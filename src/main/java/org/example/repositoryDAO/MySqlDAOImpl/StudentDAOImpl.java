@@ -3,7 +3,8 @@ package org.example.repositoryDAO.MySqlDAOImpl;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.example.JDBC.DBConnectionPool;
-import org.example.entity.*;
+
+import org.example.entity.Student;
 import org.example.exceptions.DAO_exception;
 import org.example.repositoryDAO.IStudentDAO;
 
@@ -28,14 +29,13 @@ public class StudentDAOImpl implements IStudentDAO {
     private Student converInfo(ResultSet rs) throws DAO_exception {
         String name = null;
         Student student = null;
-
         try {
             name = rs.getString("name");
             String surname = rs.getString("surname");
             String phoneNumber = rs.getString("phoneNumber");
+            //student.setIdStudent(rs.getInt("id_student"));
             student.setIdStudent(rs.getInt("id_student"));
             student = new Student(name, surname, phoneNumber);
-
 
         } catch (SQLException e) {
             throw new DAO_exception("The student could not be created. ", e);
