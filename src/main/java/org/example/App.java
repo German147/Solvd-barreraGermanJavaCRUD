@@ -2,6 +2,11 @@ package org.example;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.example.entity.Teacher;
+import org.example.service.serviceImpl.TeacherServiceImpl;
+
+import java.util.ArrayList;
+import java.util.List;
 
 
 /**
@@ -32,6 +37,22 @@ public class App {
         } catch (JAXBException e) {
             e.printStackTrace();
         }
+
+
+        List<Teacher> teacherList = new ArrayList<>();
+        TeacherServiceImpl service = new TeacherServiceImpl();
+//        teacherList = service.findAllTeachers();
+//        for (Teacher teacher : teacherList) {
+//            System.out.println(teacher.getName());
+//        }
+
+//        Teacher Juan = new Teacher(2);
+//        Juan =  service.getTeacherById(2);
+//        System.out.println(Juan.getName());
+        Teacher Juan = new Teacher(5,"Tomas", "Flores", "32165487",7);
+        service.insertTeacher(Juan);
+
+//        service.deleteTeacherById(Juan);
 
 
 //        StudentServiceImpl service = new StudentServiceImpl();
@@ -95,7 +116,8 @@ public class App {
         /**
          * Here we create a list of student from the DB
          */
-//        List<Student> studentList = service.listStudentSDAO();
+//        StudentServiceImpl service = new StudentServiceImpl();
+//        List<Student> studentList = service.findAllStudents();
 //        for (Student student : studentList) {
 //            LOGGER.info(student.toString() + student.getName());
 //        }
