@@ -9,7 +9,7 @@ public class Student extends Person{
     private Course studentCourse;
     private List<Tutor> studentTutorList;
     private List<Subject> studentSubjectList;
-    private List<Behaviour_Attention_Call> attention_callList;
+    private List<BehaviourAttentionCall> attention_callList;
 
     public Student() {
     }
@@ -27,7 +27,7 @@ public class Student extends Person{
     public Student(String name, String surname, String phoneNumber, int idStudent,
                    MedicalCertificates studentMedicalCertificates, Course studentCourse,
                    List<Tutor> studentTutorList, List<Subject> studentSubjectList,
-                   List<Behaviour_Attention_Call> attention_callList) {
+                   List<BehaviourAttentionCall> attention_callList) {
         super(name, surname, phoneNumber);
         this.idStudent = idStudent;
         this.studentMedicalCertificates = studentMedicalCertificates;
@@ -77,11 +77,11 @@ public class Student extends Person{
         this.studentSubjectList = studentSubjectList;
     }
 
-    public List<Behaviour_Attention_Call> getAttention_callList() {
+    public List<BehaviourAttentionCall> getAttention_callList() {
         return attention_callList;
     }
 
-    public void setAttention_callList(List<Behaviour_Attention_Call> attention_callList) {
+    public void setAttention_callList(List<BehaviourAttentionCall> attention_callList) {
         this.attention_callList = attention_callList;
     }
 
