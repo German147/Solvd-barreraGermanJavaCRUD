@@ -31,6 +31,17 @@ public class Teacher extends Person {
     }
 
 
+    public Teacher(int idTeacher, String name, String surname, String phoneNumber, String teacherDepartment, int teacherAddress,
+                   MedicalCertificates teacherMedicalCertificate, Subject teacherSubject,
+                   List<Course> courseList) {
+        super(name, surname, phoneNumber);
+        this.idTeacher = idTeacher;
+        this.teacherDepartment = teacherDepartment;
+        this.teacherAddress = teacherAddress;
+        this.teacherMedicalCertificate = teacherMedicalCertificate;
+        this.teacherSubject = teacherSubject;
+        this.courseList = courseList;
+    }
 
     public Teacher(int idTeacher, String teacherDepartment, int teacherAddress,
                    MedicalCertificates teacherMedicalCertificate, Subject teacherSubject,
