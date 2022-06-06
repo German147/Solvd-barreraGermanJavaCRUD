@@ -2,7 +2,9 @@ package org.example;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.example.entity.Course;
 import org.example.entity.Teacher;
+import org.example.service.serviceImpl.CourseServiceImpl;
 import org.example.service.serviceImpl.TeacherServiceImpl;
 
 import java.util.ArrayList;
@@ -39,8 +41,23 @@ public class App {
         }
 
 
-        List<Teacher> teacherList = new ArrayList<>();
-        TeacherServiceImpl service = new TeacherServiceImpl();
+
+//        CourseServiceImpl service = new CourseServiceImpl();
+//        Course nuevo  = new Course(9);
+//        service.updateCourse(nuevo);
+//
+//
+//        List<Course> courseList = new ArrayList<>();
+//        courseList = service.findAllCourses();
+//        System.out.println(courseList);
+//
+//
+//        service.deleteCourse(nuevo);
+
+
+
+//        List<Teacher> teacherList = new ArrayList<>();
+//        TeacherServiceImpl service = new TeacherServiceImpl();
 //        teacherList = service.findAllTeachers();
 //        for (Teacher teacher : teacherList) {
 //            System.out.println(teacher.getName());
@@ -49,8 +66,8 @@ public class App {
 //        Teacher Juan = new Teacher(2);
 //        Juan =  service.getTeacherById(2);
 //        System.out.println(Juan.getName());
-        Teacher Juan = new Teacher(5,"Tomas", "Flores", "32165487",7);
-        service.insertTeacher(Juan);
+//        Teacher Juan = new Teacher(5,"Tomas", "Flores", "32165487",7);
+//        service.insertTeacher(Juan);
 
 //        service.deleteTeacherById(Juan);
 
