@@ -6,6 +6,7 @@ public class Course {
 
     private int idCourse;
     private String courseName;
+    private String celatorName;
     private List<Student> courseStudentList;
     private List<Teacher> courseTeacherList;
     private List<Subject> courseSubjectList;
@@ -17,12 +18,21 @@ public class Course {
         this.idCourse = idCourse;
     }
 
-    public Course(int idCourse, String courseName,
+    public Course(int idCourse, String courseName, String celatorName) {
+        this.idCourse = idCourse;
+        this.courseName = courseName;
+        this.celatorName = celatorName;
+    }
+
+    public Course(int idCourse,
+                  String courseName,
+                  String celatorName,
                   List<Student> courseStudentList,
                   List<Teacher> courseTeacherList,
                   List<Subject> courseSubjectList) {
         this.idCourse = idCourse;
         this.courseName = courseName;
+        this.celatorName = celatorName;
         this.courseStudentList = courseStudentList;
         this.courseTeacherList = courseTeacherList;
         this.courseSubjectList = courseSubjectList;
@@ -42,6 +52,14 @@ public class Course {
 
     public void setCourseName(String courseName) {
         this.courseName = courseName;
+    }
+
+    public String getCelatorName() {
+        return celatorName;
+    }
+
+    public void setCelatorName(String celatorName) {
+        this.celatorName = celatorName;
     }
 
     public List<Student> getCourseStudentList() {
@@ -73,6 +91,7 @@ public class Course {
         return "Course{" +
                 "idCourse=" + idCourse +
                 ", courseName='" + courseName + '\'' +
+                ", celatorName='" + celatorName + '\'' +
                 ", courseStudentList=" + courseStudentList +
                 ", courseTeacherList=" + courseTeacherList +
                 ", courseSubjectList=" + courseSubjectList +
