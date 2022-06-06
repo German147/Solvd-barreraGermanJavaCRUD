@@ -24,6 +24,11 @@ public class Course {
         this.celatorName = celatorName;
     }
 
+    public Course(String courseName, String celatorName) {
+        this.courseName = courseName;
+        this.celatorName = celatorName;
+    }
+
     public Course(int idCourse,
                   String courseName,
                   String celatorName,
@@ -92,9 +97,6 @@ public class Course {
                 "idCourse=" + idCourse +
                 ", courseName='" + courseName + '\'' +
                 ", celatorName='" + celatorName + '\'' +
-                ", courseStudentList=" + courseStudentList +
-                ", courseTeacherList=" + courseTeacherList +
-                ", courseSubjectList=" + courseSubjectList +
                 '}';
     }
 }

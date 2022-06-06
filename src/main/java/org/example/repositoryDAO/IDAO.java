@@ -9,11 +9,11 @@ public interface IDAO<T,K> {
 
     List<T> list();
 
-    T getById(K v)throws DAO_exception;
+    T getById(K id)throws DAO_exception;
 
     void update(T v)throws DAO_exception;
 
-    void insert(T v) throws DAO_exception, SQLException;
+    void insert(T V) throws DAO_exception, SQLException;
 
-    void delete(T v)throws DAO_exception;
+    void delete(T id)throws DAO_exception;
 }
