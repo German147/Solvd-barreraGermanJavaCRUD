@@ -2,10 +2,9 @@ package org.example;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import org.example.entity.BehaviourAttentionCall;
-import org.example.entity.Student;
-import org.example.service.serviceImpl.BehaviourAttentionCallServiceImpl;
-import org.example.service.serviceImpl.StudentServiceImpl;
+
+
+import java.util.List;
 
 
 /**
@@ -38,10 +37,12 @@ public class App {
         }
 
 
-        StudentServiceImpl service = new StudentServiceImpl();
-        Student student2 = new Student(7);
-        service.getStudentById(7);
-        LOGGER.info( student2.getName());
+//        StudentServiceImpl service = new StudentServiceImpl();
+//        List<Student> studentList = service.findAllStudents();
+//        System.out.println(studentList);
+//        Student student2 = new Student(7);
+//        service.getStudentById(7);
+//        LOGGER.info( student2.getName());
 
 //        BehaviourAttentionCallServiceImpl daoAttCall = new BehaviourAttentionCallServiceImpl();
 //        BehaviourAttentionCall attCall = new BehaviourAttentionCall(2);
