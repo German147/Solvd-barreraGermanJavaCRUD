@@ -1,9 +1,9 @@
 package org.example.service.serviceImpl;
 
-import junit.framework.TestCase;
 import org.example.entity.Teacher;
 import org.example.exceptions.DAO_exception;
 import org.example.repositoryDAO.DAOImpl.TeacherDAOImpl;
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 import java.sql.SQLException;
@@ -15,65 +15,93 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class TeacherServiceImplTest {
 
-
     TeacherDAOImpl teacherUnderTest = new TeacherDAOImpl();
 
     @Test
     public void testFindAllTeachers() {
-//        given
+        //given
         List<Teacher> teacherList = new ArrayList<>();
-//        when
+
+        //when
         teacherList = teacherUnderTest.list();
         boolean expected = false;
         if (!teacherList.isEmpty()) {
             expected = true;
         }
-//        then
+
+        //then
         assertTrue(expected);
     }
 
     @Test
     public void testGetTeacherById() {
-//        given
-        Teacher german = new Teacher(3);
-//        when
-        Teacher germanUnderTest = new Teacher();
         try {
+            //given
+            Teacher german = new Teacher(3, "German", "Barrera", "32165487");
+
+            //when
+            Teacher germanUnderTest = new Teacher();
             germanUnderTest = teacherUnderTest.getById(3);
+
+            //then
+            assertEquals(german, germanUnderTest);
         } catch (DAO_exception e) {
             e.printStackTrace();
         }
-//        then
-        assertEquals(german,germanUnderTest);
     }
 
+    @Test
     public void testUpdateTeacher() {
+        try {
+            //given
+            Teacher tomasToUpdate = new Teacher(1, "Tomas", "Frias", "456789");
+
+            //when
+            teacherUnderTest.update(tomasToUpdate);
+            Teacher afterUpdated = new Teacher();
+            afterUpdated = teacherUnderTest.getById(1);
+
+            //then
+            assertEquals(tomasToUpdate, afterUpdated);
+        } catch (DAO_exception e) {
+            e.printStackTrace();
+        }
     }
 
+    @Test
     public void testInsertTeacher() {
-        //given
-        Teacher jose = new Teacher(1, "Jose", "Martinez", "123465");
-        Teacher martin = new Teacher(2, "Martin", "Rodriguez", "457891");
-
         try {
+            //given
+            Teacher jose = new Teacher(9, "Jose", "Martinez", "123465");
             teacherUnderTest.insert(jose);
-            teacherUnderTest.insert(martin);
+
+            //when
+            Teacher joseUnderTest = new Teacher();
+            joseUnderTest = teacherUnderTest.getById(9);
+
+            //then
+            assertEquals(jose, joseUnderTest);
         } catch (DAO_exception | SQLException e) {
             e.printStackTrace();
         }
-        //when
+    }
+
+    @Test
+    public void testDeleteTeacherById() {
         try {
-            teacherUnderTest.getById(1);
+            //given
+            Teacher teacherToDelete = new Teacher(5);
 
+            //when
+            teacherUnderTest.delete(teacherToDelete);
+            Teacher teacherDoesntExists = new Teacher();
+            teacherDoesntExists = teacherUnderTest.getById(5);
 
+            //then
+            Assertions.assertNull(teacherDoesntExists);
         } catch (DAO_exception e) {
             e.printStackTrace();
         }
-        //then
 
-
-    }
-
-    public void testDeleteTeacherById() {
     }
 }

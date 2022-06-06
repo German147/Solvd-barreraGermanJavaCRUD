@@ -1,6 +1,7 @@
 package org.example.entity;
 
 import java.util.List;
+import java.util.Objects;
 
 public class Teacher extends Person {
 
@@ -109,16 +110,16 @@ public class Teacher extends Person {
         this.courseList = courseList;
     }
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Teacher)) return false;
+        Teacher teacher = (Teacher) o;
+        return getIdTeacher() == teacher.getIdTeacher();
+    }
 
     @Override
-    public String toString() {
-        return "Teacher{" +
-                "idTeacher=" + idTeacher +
-                ", teacherDepartment='" + teacherDepartment + '\'' +
-                ", teacherAddress=" + teacherAddress +
-                ", teacherMedicalCertificate=" + teacherMedicalCertificate +
-                ", teacherSubject=" + teacherSubject +
-                ", courseList=" + courseList +
-                '}';
+    public int hashCode() {
+        return Objects.hash(getIdTeacher());
     }
 }
