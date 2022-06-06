@@ -28,7 +28,7 @@ public class App {
 //        Teacher Juan = new Teacher(2);
 //        Juan =  service.getTeacherById(2);
 //        System.out.println(Juan.getName());
-        Teacher Juan = new Teacher(5,"Tomas", "Flores", "32165487",7);
+        Teacher Juan = new Teacher(5,"Tomas", "Flores", "32165487");
         service.insertTeacher(Juan);
 
 //        service.deleteTeacherById(Juan);

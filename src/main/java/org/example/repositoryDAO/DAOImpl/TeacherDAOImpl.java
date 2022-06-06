@@ -16,9 +16,9 @@ import java.util.List;
 
 public class TeacherDAOImpl implements ITeacherDAO {
 
-    private static final String SQL_SELECT_ALL = "SELECT id_teacher, name, surname, phoneNumber, fk_id_address FROM teachers";
-    private static final String SQL_INSERT = "INSERT INTO teachers (id_teacher, name, surname, phoneNumber,fk_id_address) VALUES (?,?,?,?,?)";
-    private static final String SQL_UPDATE = "UPDATE teachers SET name = ?, surname = ?, phoneNumber = ?, fk_id_address = ? WHERE id_teacher = ?";
+    private static final String SQL_SELECT_ALL = "SELECT id_teacher, name, surname, phoneNumber FROM teachers";
+    private static final String SQL_INSERT = "INSERT INTO teachers (id_teacher, name, surname, phoneNumber) VALUES (?,?,?,?)";
+    private static final String SQL_UPDATE = "UPDATE teachers SET name = ?, surname = ?, phoneNumber =  ? WHERE id_teacher = ?";
     private static final String SQL_DELETE = "DELETE FROM teachers WHERE id_teacher = ? ";
     private static final String SQL_FIND_BY_ID = "SELECT * FROM teachers WHERE id_teacher = ? ";
     private static final Logger LOGGER = LogManager.getLogger(TeacherDAOImpl.class);
@@ -31,8 +31,8 @@ public class TeacherDAOImpl implements ITeacherDAO {
             String name = rs.getString("name");
             String surname = rs.getString("surname");
             String phone = rs.getString("phoneNumber");
-            int fkAdress = rs.getInt("fk_id_address");
-            teacher = new Teacher(name, surname, phone, fkAdress);
+           // int fkAdress = rs.getInt("fk_id_address");
+            teacher = new Teacher(name, surname, phone);
             teacher.setIdTeacher(rs.getInt("id_teacher"));
 
         } catch (SQLException e) {
