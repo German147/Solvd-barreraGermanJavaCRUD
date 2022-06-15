@@ -26,7 +26,6 @@ public class App {
         StudentBuilder student1 = new StudentBuilder();
         Student student = student1.buildStudent();
 
-
         JAXBContext jaxbContext = null;
         try {
             jaxbContext = JAXBContext.newInstance(Student.class);

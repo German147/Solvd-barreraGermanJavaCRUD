@@ -1,1 +1,109 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?><Student idStudent="68"><name>Leandro</name><phoneNumber>123456</phoneNumber><surname>Sanchex</surname><firstDayAtSchool>31/59/1969</firstDayAtSchool><studentMedicalCertificates idMedicalCertificate="20"><doctorName>Lucas</doctorName><expireDate>31/59/1969</expireDate></studentMedicalCertificates><studentCourse idCourse="1"><courseName>3er A</courseName><courseStudentList><Student idStudent="7"><name>Michael</name><phoneNumber>1345678</phoneNumber><surname>Johanssen</surname></Student><Student idStudent="14"><name>Hoogart</name><phoneNumber>132465</phoneNumber><surname>Tfany</surname></Student><Student idStudent="24"><name>Lucas</name><phoneNumber>45674125</phoneNumber><surname>George</surname></Student></courseStudentList><courseTeacherList><Teacher><name>Tomas</name><phoneNumber>457812</phoneNumber><surname>Burgetti</surname><idTeacher>61</idTeacher></Teacher><Teacher><name>Jim</name><phoneNumber>457812</phoneNumber><surname>Parrel</surname><idTeacher>62</idTeacher></Teacher><Teacher><name>Ciro</name><phoneNumber>457812</phoneNumber><surname>Pachiarenni</surname><idTeacher>63</idTeacher></Teacher></courseTeacherList><courseSubjectList><Subject idSubject="21"><subjectName>Xml Lecture</subjectName><lectureList><Lecture idLecture="45"><lectureTopic>How to implement JaxB</lectureTopic></Lecture><Lecture idLecture="40"><lectureTopic>Marshilling JaxB</lectureTopic></Lecture><Lecture idLecture="42"><lectureTopic>UnMarshalling JaxB</lectureTopic></Lecture></lectureList></Subject><Subject idSubject="21"><subjectName>Jacson Lecture</subjectName><lectureList><Lecture idLecture="21"><lectureTopic>Jacson Class1</lectureTopic></Lecture><Lecture idLecture="22"><lectureTopic>JacsonFolderst 2</lectureTopic></Lecture><Lecture idLecture="23"><lectureTopic>Parsing Jacso 2</lectureTopic></Lecture></lectureList></Subject></courseSubjectList></studentCourse><studentTutorList><Tutor idTutor="81"><name>Marcos</name><phoneNumber>457812</phoneNumber><surname>Thomlinson</surname></Tutor><Tutor idTutor="82"><name>Tim</name><phoneNumber>465124578</phoneNumber><surname>Addams</surname></Tutor><Tutor idTutor="83"><name>Judy</name><phoneNumber>963568923</phoneNumber><surname>Cunnington</surname></Tutor></studentTutorList><attention_callList><Behaviour_Attention_Call idBehaviourCall="992"><dateOfBehaviourCall>27-08-2021</dateOfBehaviourCall><numberOfCall>2</numberOfCall><isTutorAwareOf>false</isTutorAwareOf></Behaviour_Attention_Call><Behaviour_Attention_Call idBehaviourCall="0"><numberOfCall>0</numberOfCall><isTutorAwareOf>false</isTutorAwareOf></Behaviour_Attention_Call></attention_callList></Student>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Student idStudent="68">
+    <name>Leandro</name>
+    <phoneNumber>123456</phoneNumber>
+    <surname>Sanchex</surname>
+    <firstDayAtSchool>31/59/1969</firstDayAtSchool>
+    <studentMedicalCertificates idMedicalCertificate="20">
+        <doctorName>Lucas</doctorName>
+        <expireDate>31/59/1969</expireDate>
+    </studentMedicalCertificates>
+    <studentCourse idCourse="1">
+        <courseName>3er A</courseName>
+        <courseStudentList>
+            <Student idStudent="7">
+                <name>Michael</name>
+                <phoneNumber>1345678</phoneNumber>
+                <surname>Johanssen</surname>
+            </Student>
+            <Student idStudent="14">
+                <name>Hoogart</name>
+                <phoneNumber>132465</phoneNumber>
+                <surname>Tfany</surname>
+            </Student>
+            <Student idStudent="24">
+                <name>Lucas</name>
+                <phoneNumber>45674125</phoneNumber>
+                <surname>George</surname>
+            </Student>
+        </courseStudentList>
+        <courseTeacherList>
+            <Teacher>
+                <name>Tomas</name>
+                <phoneNumber>457812</phoneNumber>
+                <surname>Burgetti</surname>
+                <idTeacher>61</idTeacher>
+            </Teacher>
+            <Teacher>
+                <name>Jim</name>
+                <phoneNumber>457812</phoneNumber>
+                <surname>Parrel</surname>
+                <idTeacher>62</idTeacher>
+            </Teacher>
+            <Teacher>
+                <name>Ciro</name>
+                <phoneNumber>457812</phoneNumber>
+                <surname>Pachiarenni</surname>
+                <idTeacher>63</idTeacher>
+            </Teacher>
+        </courseTeacherList>
+        <courseSubjectList>
+            <Subject idSubject="21">
+                <subjectName>Xml Lecture</subjectName>
+                <lectureList>
+                    <Lecture idLecture="45">
+                        <lectureTopic>How to implement JaxB</lectureTopic>
+                    </Lecture>
+                    <Lecture idLecture="40">
+                        <lectureTopic>Marshilling JaxB</lectureTopic>
+                    </Lecture>
+                    <Lecture idLecture="42">
+                        <lectureTopic>UnMarshalling JaxB</lectureTopic>
+                    </Lecture>
+                </lectureList>
+            </Subject>
+            <Subject idSubject="21">
+                <subjectName>Jacson Lecture</subjectName>
+                <lectureList>
+                    <Lecture idLecture="21">
+                        <lectureTopic>Jacson Class1</lectureTopic>
+                    </Lecture>
+                    <Lecture idLecture="22">
+                        <lectureTopic>JacsonFolderst 2</lectureTopic>
+                    </Lecture>
+                    <Lecture idLecture="23">
+                        <lectureTopic>Parsing Jacso 2</lectureTopic>
+                    </Lecture>
+                </lectureList>
+            </Subject>
+        </courseSubjectList>
+    </studentCourse>
+    <studentTutorList>
+        <Tutor idTutor="81">
+            <name>Marcos</name>
+            <phoneNumber>457812</phoneNumber>
+            <surname>Thomlinson</surname>
+        </Tutor>
+        <Tutor idTutor="82">
+            <name>Tim</name>
+            <phoneNumber>465124578</phoneNumber>
+            <surname>Addams</surname>
+        </Tutor>
+        <Tutor idTutor="83">
+            <name>Judy</name>
+            <phoneNumber>963568923</phoneNumber>
+            <surname>Cunnington</surname>
+        </Tutor>
+    </studentTutorList>
+    <attention_callList>
+        <Behaviour_Attention_Call idBehaviourCall="992">
+            <dateOfBehaviourCall>27-08-2021</dateOfBehaviourCall>
+            <numberOfCall>2</numberOfCall>
+            <isTutorAwareOf>false</isTutorAwareOf>
+        </Behaviour_Attention_Call>
+        <Behaviour_Attention_Call idBehaviourCall="0">
+            <numberOfCall>0</numberOfCall>
+            <isTutorAwareOf>false</isTutorAwareOf>
+        </Behaviour_Attention_Call>
+    </attention_callList>
+</Student>
