@@ -2,10 +2,16 @@ package org.example;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import org.example.entity.Teacher;
-import org.example.service.serviceImpl.TeacherServiceImpl;
+import org.example.entity.*;
+import org.example.util.StudentBuilder;
 
+import javax.xml.bind.JAXBContext;
+import javax.xml.bind.JAXBException;
+import javax.xml.bind.Marshaller;
+import javax.xml.bind.Unmarshaller;
+import java.io.*;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 
@@ -17,44 +23,54 @@ public class App {
     private static final Logger LOGGER = LogManager.getLogger(App.class);
 
     public static void main(String[] args) {
+        StudentBuilder student1 = new StudentBuilder();
+        Student student = student1.buildStudent();
 
-        List<Teacher> teacherList = new ArrayList<>();
-        TeacherServiceImpl service = new TeacherServiceImpl();
-//        teacherList = service.findAllTeachers();
-//        for (Teacher teacher : teacherList) {
-//            System.out.println(teacher.getName());
-//        }
+        JAXBContext jaxbContext = null;
+        try {
+            jaxbContext = JAXBContext.newInstance(Student.class);
+            Marshaller marshaller = jaxbContext.createMarshaller();
+            marshaller.marshal(student,new File("result8.XML"));
+            marshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true);
+            StringWriter xmlWriter = new StringWriter();
+            marshaller.marshal(student, xmlWriter);
+            System.out.println(xmlWriter.toString());
 
-//        Teacher Juan = new Teacher(2);
-//        Juan =  service.getTeacherById(2);
-//        System.out.println(Juan.getName());
-        Teacher Juan = new Teacher(5,"Tomas", "Flores", "32165487");
-        service.insertTeacher(Juan);
-
-//        service.deleteTeacherById(Juan);
-
-
-//        StudentServiceImpl service = new StudentServiceImpl();
-//        Student student2 = service.getStudentById(5);
-//        LOGGER.info(student2.getName());
+            Unmarshaller unmarshaller = jaxbContext.createUnmarshaller();
+            StringReader xmlReader = new StringReader(xmlWriter.toString());
+            Student outStudent = (Student) unmarshaller.unmarshal(xmlReader);
+            System.out.println("This is the unmarshall " + outStudent);
+        } catch (JAXBException e) {
+            e.printStackTrace();
+        }
 
 
-//       TutorServiceImpl service = new TutorServiceImpl();
-//       Tutor miguel = new Tutor(5,"Miguel","Carrascosa","78946512");
-//        service.insertTutor(miguel);
+
+
+
+//ANDREW APPROACH
+//            JAXBContext jaxbContext = JAXBContext.newInstance(Student.class);
+//            Marshaller marshaller = jaxbContext.createMarshaller();
+//          //  marshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true);
+//            marshaller.marshal(student,new File("result7.XML"));
+
+
+
+
+
+
+
+
+
+//        TutorServiceImpl service = new TutorServiceImpl();
+//        Tutor miguel = new Tutor(4,"Brandon","Ferreira","78946512");
+//        service.insertTutorDAO(miguel);
 //
-//       Tutor Miguel = new Tutor(5);
-//        miguel = service.getTutorById(5);
-//        System.out.println(miguel.getName() + " " + miguel.getSurname() + " his phone is " + miguel.getPhoneNumber());
-
-//        service.deleteTutorById(Miguel);
 //        List<Tutor> tutorList = new ArrayList<>();
-//        tutorList = service.findAllTutors();
+//        tutorList = service.listTutorDAO();
 //        for (Tutor tutor : tutorList) {
 //            LOGGER.info(tutor.toString()+tutor.getName()+tutor.getSurname()+tutor.getPhoneNumber());
 //        }
-
-
 //                StudentServiceImpl service = new StudentServiceImpl();
 //                Student student1 = new Student("Sebastian","Kulfprit","789465");
 //        service.insertStudentDAO(student1);
@@ -95,8 +111,7 @@ public class App {
         /**
          * Here we create a list of student from the DB
          */
-//        StudentServiceImpl service = new StudentServiceImpl();
-//        List<Student> studentList = service.findAllStudents();
+//        List<Student> studentList = service.listStudentSDAO();
 //        for (Student student : studentList) {
 //            LOGGER.info(student.toString() + student.getName());
 //        }
