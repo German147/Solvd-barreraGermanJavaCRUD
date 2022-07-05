@@ -19,9 +19,9 @@ public class App {
 
     public static void main(String[] args) {
 
-        MySessionDAOImpl mdao = new MySessionDAOImpl();
-        String msqlVersion = mdao.getVersionMySql();
-        System.out.println(msqlVersion);
+//        MySessionDAOImpl mdao = new MySessionDAOImpl();
+//        String msqlVersion = mdao.getVersionMySql();
+//        System.out.println(msqlVersion);
 
 //        TutorServiceImpl service = new TutorServiceImpl();
 //        Tutor miguel = new Tutor(4,"Brandon","Ferreira","78946512");

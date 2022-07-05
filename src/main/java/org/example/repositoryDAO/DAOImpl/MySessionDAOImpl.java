@@ -1,5 +1,6 @@
 package org.example.repositoryDAO.DAOImpl;
 
+import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.session.SqlSession;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -28,4 +29,5 @@ public class MySessionDAOImpl implements IMySessionFactoryDAO {
         }
         return version;
     }
+
 }
